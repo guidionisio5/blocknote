@@ -41,7 +41,9 @@
             </div>
         </nav>
         <!-- FIM MENU -->
+    </div>
 
+    <div class="container-fluid align-items-center">
         <!-- INÍCIO CADASTRO USUÁRIO -->
         <div class="text-center">
             <h1 class="text-light">Cadastro de Usuário</h1>
