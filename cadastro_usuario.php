@@ -50,7 +50,7 @@
         </div>
 
         <div>
-            <form class="p-3 text-light" action="">
+            <form class="p-3 text-light" action="cadastrar_usuario.php">
                 <div class="row justify-content-md-center">
                     <div class="col-4">
                         <label class="form-label" for="nome">Nome</label>
@@ -59,40 +59,40 @@
 
                     <div class="col-4">
                         <label class="form-label" for="email">E-Mail</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="email" id="email">
+                        <input class="form-control bg-dark border-dark" type="mail" name="email" id="email">
                     </div>
                 </div>
                 <div class="row justify-content-md-center">
                     <div class="col-4">
-                        <label class="form-label" for="nome">Nome</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="nome" id="nome">
+                        <label class="form-label" for="nome">Data de Nascimento</label>
+                        <input class="form-control bg-dark border-dark" type="text" name="nascimento" id="nascimento">
                     </div>
 
                     <div class="col-4">
-                        <label class="form-label" for="email">E-Mail</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="email" id="email">
+                        <label class="form-label" for="email">CPF</label>
+                        <input class="form-control bg-dark border-dark" type="text" name="cpf" id="cpf">
                     </div>
                 </div>
                 <div class="row justify-content-md-center">
                     <div class="col-4">
-                        <label class="form-label" for="nome">Nome</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="nome" id="nome">
+                        <label class="form-label" for="nome">Telefone</label>
+                        <input class="form-control bg-dark border-dark" type="text" name="telefone" id="telefone">
                     </div>
 
                     <div class="col-4">
-                        <label class="form-label" for="email">E-Mail</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="email" id="email">
+                        <label class="form-label" for="email">Imagem</label>
+                        <input class="form-control bg-dark border-dark" type="file" name="imagem" id="imagem">
                     </div>
                 </div>
                 <div class="row justify-content-md-center">
                     <div class="col-4">
-                        <label class="form-label" for="nome">Nome</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="nome" id="nome">
+                        <label class="form-label" for="nome">Senha</label>
+                        <input class="form-control bg-dark border-dark" type="password" name="senha" id="senha">
                     </div>
 
                     <div class="col-4">
-                        <label class="form-label" for="email">E-Mail</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="email" id="email">
+                        <label class="form-label" for="email">Confirmar senha</label>
+                        <input class="form-control bg-dark border-dark" type="text" name="confirmar_senha" id="confirmar_senha">
                     </div>
                 </div>
 

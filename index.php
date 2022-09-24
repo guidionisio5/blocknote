@@ -48,7 +48,7 @@
         </div>
 
         <div>
-            <form class="p-3 text-light" action="">
+            <form class="p-3 text-light" action="login.php">
                 <div class="row justify-content-md-center">
                     <div class="col-4">
                         <label class="form-label" for="nome">E-Mail</label>
