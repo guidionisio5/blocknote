@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     
     <!-- CSS da página -->
-    <link rel="stylesheet" href="css/cadastrar.css">
+    <link rel="stylesheet" href="assets/css/cadastrar.css">
 
 </head>
 
@@ -53,49 +53,49 @@
         </div>
 
         <div>
-            <form class="p-3 text-light" action="_cadastrar_usuario.php">
+            <form class="p-3 text-light" action="_cadastrar_usuario.php" method="post" enctype="multipart/form-data">
                 <div class="row justify-content-md-center">
                     <div class="col-4">
                         <label class="form-label" for="nome">Nome</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="nome" id="nome">
+                        <input class="form-control bg-dark border-dark text-light" type="text" name="nome" id="nome">
                     </div>
 
                     <div class="col-4">
-                        <label class="form-label" for="email">E-Mail</label>
-                        <input class="form-control bg-dark border-dark" type="mail" name="email" id="email">
+                        <label class="form-label" for="sobrenome">Sobrenome</label>
+                        <input class="form-control bg-dark border-dark text-light" type="text" name="sobrenome" id="sobrenome">
                     </div>
                 </div>
                 <div class="row justify-content-md-center">
                     <div class="col-4">
-                        <label class="form-label" for="nome">Data de Nascimento</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="nascimento" id="nascimento">
+                        <label class="form-label" for="email">E-Mail</label>
+                        <input class="form-control bg-dark border-dark text-light" type="mail" name="email" id="email">
                     </div>
 
                     <div class="col-4">
-                        <label class="form-label" for="email">CPF</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="cpf" id="cpf">
+                        <label class="form-label" for="nome">Data de Nascimento</label>
+                        <input class="form-control bg-dark border-dark text-light" type="text" name="nascimento" id="nascimento">
                     </div>
                 </div>
                 <div class="row justify-content-md-center">
                     <div class="col-4">
                         <label class="form-label" for="nome">Telefone</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="telefone" id="telefone">
+                        <input class="form-control bg-dark border-dark text-light" type="text" name="telefone" id="telefone">
                     </div>
 
                     <div class="col-4">
                         <label class="form-label" for="email">Imagem</label>
-                        <input class="form-control bg-dark border-dark" type="file" name="imagem" id="imagem">
+                        <input class="form-control bg-dark border-dark text-light" type="file" name="imagem" id="imagem">
                     </div>
                 </div>
                 <div class="row justify-content-md-center">
                     <div class="col-4">
                         <label class="form-label" for="nome">Senha</label>
-                        <input class="form-control bg-dark border-dark" type="password" name="senha" id="senha">
+                        <input class="form-control bg-dark border-dark text-light" type="password" name="senha" id="senha">
                     </div>
 
                     <div class="col-4">
-                        <label class="form-label" for="email">Confirmar senha</label>
-                        <input class="form-control bg-dark border-dark" type="text" name="confirmar_senha" id="confirmar_senha">
+                        <label class="form-label" for="confirmar_senha">Confirmar senha</label>
+                        <input class="form-control bg-dark border-dark text-light" type="password" name="confirmar_senha" id="confirmar_senha">
                     </div>
                 </div>
 
