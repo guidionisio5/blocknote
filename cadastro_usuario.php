@@ -53,7 +53,7 @@
         </div>
 
         <div>
-            <form class="p-3 text-light" action="cadastrar_usuario.php">
+            <form class="p-3 text-light" action="_cadastrar_usuario.php">
                 <div class="row justify-content-md-center">
                     <div class="col-4">
                         <label class="form-label" for="nome">Nome</label>
