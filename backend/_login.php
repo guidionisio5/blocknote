@@ -30,6 +30,7 @@ try{
 
 }catch(PDOException $erro){
     echo $erro -> getMessage();
+    header('location: index.php');
 }
 
 
