@@ -62,13 +62,19 @@
                         <input class="form-control bg-dark border-dark" type="password" name="senha" id="senha">
                     </div>
                 </div>
+                
+                <div class="text-center">
+                    <a class="text-light " href="">Esqueci a senha</a>
+                </div>
+
+                <div class="text-center">
+                    <a class="text-light " href="cadastro_usuario.php">Cadastrar-se</a>
+                </div>
 
                 <div class="text-center">
                     <button class="btn btn-info text-light mt-2" type="submit">Entrar</button>
                 </div>
-                <div class="text-center">
-                    <a class="text-light " href="cadastro_usuario.php">Cadastrar-se</a>
-                </div>
+                
             </form>
         </div>
         <!-- FIM CADASTRO USUÁRIO -->
