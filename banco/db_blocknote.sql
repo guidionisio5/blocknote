@@ -22,18 +22,18 @@ USE `db_blocknote`;
 -- Copiando estrutura para tabela db_blocknote.tb_cadastro
 CREATE TABLE IF NOT EXISTS `tb_cadastro` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(80) NOT NULL,
-  `data_nascimento` date NOT NULL,
-  `cpf` char(11) NOT NULL,
-  `telefone` varchar(13) NOT NULL,
-  `imagem` varchar(100) NOT NULL,
+  `nome` varchar(30) NOT NULL,
+  `sobrenome` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
+  `data_nascimento` date DEFAULT NULL,
+  `telefone` varchar(15) DEFAULT NULL,
+  `imagem` varchar(100) DEFAULT NULL,
   `senha` varchar(50) NOT NULL,
   `data_cadastro` datetime NOT NULL DEFAULT current_timestamp(),
   `ativo` bit(1) NOT NULL DEFAULT b'1',
   PRIMARY KEY (`id`),
-  KEY `cpf` (`cpf`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 -- Copiando dados para a tabela db_blocknote.tb_cadastro: ~0 rows (aproximadamente)
 
