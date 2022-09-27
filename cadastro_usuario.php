@@ -53,7 +53,7 @@
         </div>
 
         <div>
-            <form class="p-3 text-light" action="_cadastrar_usuario.php" method="post" enctype="multipart/form-data">
+            <form class="p-3 text-light" action="backend/_cadastrar_usuario.php" method="post" enctype="multipart/form-data">
                 <div class="row justify-content-md-center">
                     <div class="col-4">
                         <label class="form-label" for="nome">Nome</label>
@@ -73,7 +73,7 @@
 
                     <div class="col-4">
                         <label class="form-label" for="nome">Data de Nascimento</label>
-                        <input class="form-control bg-dark border-dark text-light" type="text" name="nascimento" id="nascimento">
+                        <input class="form-control bg-dark border-dark text-light" type="date" name="nascimento" id="nascimento">
                     </div>
                 </div>
                 <div class="row justify-content-md-center">

@@ -14,7 +14,7 @@ try{
 
     $nome_original_imagem = $_FILES['imagem']['name'];
     $extensao = pathinfo($nome_original_imagem,PATHINFO_EXTENSION);
-    if($extensao != 'jpg' && $extensao != 'jpeg' && $extensao != 'png' && $extensao != 'svg'){
+    if($extensao != 'jpg' && $extensao != 'jpeg' && $extensao != 'png' && $extensao != 'svg' && $extensao != ''){
         echo 'Formato de imagem inválido';
         exit;     
     } 
@@ -37,7 +37,7 @@ try{
         $comando = $con->prepare($sql);
         $comando->execute();
         
-        header('Location: index.php');
+        header('Location: ../index.php');
 
         $con = null;
     }
