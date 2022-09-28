@@ -53,7 +53,7 @@
         </div>
 
         <div>
-            <form class="p-3 text-light" action="backend/_cadastrar_usuario.php" method="post" enctype="multipart/form-data">
+            <form class="p-3 text-light" id="form-usuarios" action="backend/_cadastrar_usuario.php" method="post" enctype="multipart/form-data">
                 <div class="row justify-content-md-center">
                     <div class="col-4">
                         <label class="form-label" for="nome">Nome</label>
@@ -100,7 +100,7 @@
                 </div>
 
                 <div class="text-center">
-                    <button class="btn btn-info text-light mt-2" type="submit">Cadastrar</button>
+                    <button class="btn btn-info text-light mt-2" type="button" onclick="cadastrarUsuarios()">Cadastrar</button>
                 </div>
                 <div class="text-center">
                     <a class="text-light " href="index.php">Voltar para login</a>
@@ -113,6 +113,9 @@
 
     <!-- Importação JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- Importação JS da página -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

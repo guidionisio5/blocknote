@@ -11,12 +11,26 @@ try{
     $nascimento = $_POST['nascimento'];
     $telefone = $_POST['telefone'];
     $senha = $_POST['senha'];
+    $confirmar_senha = $_POST['confirmar_senha'];
+
+    if($senha != $confirmar_senha){
+
+        $retorno = array('retorno'=>'erro','mensagem'=>'Senhas não conferem, verifique e tente novamente'); 
+        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE); 
+        echo $json;
+        exit;
+
+    }
 
     $nome_original_imagem = $_FILES['imagem']['name'];
     $extensao = pathinfo($nome_original_imagem,PATHINFO_EXTENSION);
     if($extensao != 'jpg' && $extensao != 'jpeg' && $extensao != 'png' && $extensao != 'svg' && $extensao != ''){
-        echo 'Formato de imagem inválido';
-        exit;     
+        
+        $retorno = array('retorno'=>'erro','mensagem'=>'Extensão de imagem inválida!'); 
+        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE); 
+        echo $json;
+        exit;   
+
     } 
     $hash = md5(uniqid($_FILES['imagem']['tmp_name'],true));
     $nome_final_imagem = $hash.'.'.$extensao;
@@ -28,23 +42,30 @@ try{
     $resultado->execute();
 
     if($resultado > 0){
+        
+        $retorno = array('retorno'=>'erro','mensagem'=>'E-mail já cadastrado, verifique e tente novamente!'); 
+        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE); 
+        echo $json;
+        exit;
 
-        header('Location: cadastro_usuario.php');
-        $con = null;
     }else{
     
         $sql = "INSERT INTO tb_cadastro(`nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `imagem`, `senha`) VALUES('$nome', '$sobrenome', '$email', '$nascimento', '$telefone', '$nome_final_imagem', sha1('$senha'))";
         $comando = $con->prepare($sql);
         $comando->execute();
-        
-        header('Location: ../index.php');
 
-        $con = null;
+        $retorno = array('retorno'=>'ok','mensagem'=>'Usuário adicionado com sucesso!');
+        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE); 
+        echo $json;
+
     }
 
 }catch(PDOException $erro){
-    echo $erro->getMessage();
-    die();
+
+    $retorno = array('retorno'=>'erro','mensagem'=>$erro->getMessage());
+    $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
+    echo $json;
+
 }
 
 $con = null;
