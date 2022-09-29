@@ -1,10 +1,11 @@
+// função adcionar usuarios 
 const cadastrarUsuarios = () =>{
 
     // captura todo formulário e cria um formData
     let dados = new FormData($('#form-usuarios')[0]);
 
     // envio e recebimento de dados
-    const result = fetch('../backend/_cadastar_usuario.php',{
+    const result = fetch('backend/_cadastrar_usuario.php',{
       method: 'POST',
       body: dados
     })
@@ -12,9 +13,11 @@ const cadastrarUsuarios = () =>{
     .then((result)=>{
 
         Swal.fire({
-          icon: result.retorno != 'ok' ? 'error' : 'success',
+          icon: result.retorno == 'ok' ? 'success' : 'error',
           title: 'Atenção',
           text: result.mensagem,
+          showConfiirmButton: false,
+          timer: 5000
         })
 
     })
