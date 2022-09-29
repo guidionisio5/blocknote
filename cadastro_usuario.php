@@ -27,7 +27,7 @@
         </div>
 
         <div>
-            <form class="p-3 text-light" id="form-usuarios" action="backend/_cadastrar_usuario.php" method="post" enctype="multipart/form-data">
+            <form class="p-3 text-light" id="cadastro-usuarios" enctype="multipart/form-data">
                 <div class="row justify-content-md-center">
                     <div class="col-2">
                         <label class="form-label" for="nome">Nome</label>

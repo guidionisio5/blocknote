@@ -27,18 +27,25 @@
         </div>
 
         <div>
-            <form class="p-3 text-light" action="login.php">
+            <form class="p-3 text-light" id="login-usuarios">
                 <div class="row justify-content-md-center">
                     <div class="col-3">
-                        <label class="form-label" for="nome">E-Mail</label>
-                        <input class="form-control bg-dark border-dark" type="mail" name="email" id="email">
+                        <label class="form-label" for="email">E-Mail</label>
+                        <input class="form-control bg-dark border-dark text-light" type="mail" name="email" id="email">
                     </div>
                 </div>
 
                 <div class="row justify-content-md-center">
                     <div class="col-3">
-                        <label class="form-label" for="email">Senha</label>
-                        <input class="form-control bg-dark border-dark" type="password" name="senha" id="senha">
+                        <label class="form-label" for="senha">Senha</label>
+                        <input class="form-control bg-dark border-dark text-light" type="password" name="senha" id="senha">
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center">
+                    <div class="col-3">
+                        <label class="form-label" for="confirmar_senha">Confirmar Senha</label>
+                        <input class="form-control bg-dark border-dark text-light" type="password" name="confirmar_senha" id="confirmar_senha">
                     </div>
                 </div>
                 
@@ -51,7 +58,7 @@
                 </div>
 
                 <div class="text-center">
-                    <button class="btn btn-info text-light mt-2" type="submit">Entrar</button>
+                    <button class="btn btn-info text-light mt-2" type="button" onclick="loginUsuarios()">Entrar</button>
                 </div>
                 
             </form>
