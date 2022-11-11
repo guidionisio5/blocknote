@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #292929;
+}
+
+.container-escritor{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    margin-top: 10vh;
+}
+
+.escrita{
+    display: grid;
+    grid-template-rows: 9fr 3fr;
+    gap: 2vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.escreva{
+    display: grid;
+    height: 50vh;
+    width:55vw;
+    background-color: rgba(126, 126, 126, 0.219);
+    border: 1px solid #ffffff34;
+    border-radius: 1px;
+    text-align: center;
+    align-items: center;
+}
+
+.descricao{
+    height: 15vh;
+    width: 55vw;
+    background-color: rgba(126, 126, 126, 0.219);
+    border: 1px solid #ffffff34;
+    border-radius: 1px;
+    text-align: center;
+    align-items: center;
+}
+
+.categorias{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.bloco-categoria{
+    height: 20vh;
+    width: 18vw;
+    background-color: rgba(126, 126, 126, 0.219);
+    border: 1px solid #ffffff34;
+    border-radius: 1px;
+    margin: 20px;
+}
+
+h5{
+    color: white;
+    text-align: left;
+}
