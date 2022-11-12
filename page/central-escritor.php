@@ -14,36 +14,53 @@
 <body>
     <?php include '../backend/include/header.php' ?>
 
-    <div class="container-escritor">
+    <form class="container-escritor">
 
         <div class="escrita">
-            <div>
-                <h5 >Central do Editor</h5>
-                <div class=" escreva">
+            <h5>Central do Escritor</h5>
+            <textarea class="bloco-escrever">
 
-                </div>
-            </div>
-            <div>
-                <h5>
-                    Descrição
-                </h5>
-                <div class="descricao">
+            </textarea>
+            <h5>Descrição</h5>
+            <textarea class="bloco-descricao">
 
-                </div>
-            </div>
-            
+            </textarea>
         </div>
-        
+
         <div class="categorias">
-                
-            <div class="bloco-categoria"></div>
-            <div class="bloco-categoria"></div>
-            <div class="bloco-categoria"></div>
-            <div class="bloco-categoria"></div>
-            <div class="bloco-categoria"></div>
-            <div class="bloco-categoria"></div>
+            <h5>Categorias</h5>
+            <div class="bloco-categoria">
+                <div class="item-categoria">Escola</div>
+                <div class="item-categoria">Livros</div>
+                <div class="item-categoria">Treino</div>
+                <div class="item-categoria">
+
+                    <p class="adicionar mais">
+                        +
+                    </p>
+
+                </div>
+
+                <div class="item-categoria">
+
+                    <p class="mais">
+                        +
+                    </p>
+
+                </div>
+                <div class="item-categoria">
+
+                <small class="mais">
+                        +
+                </small>
+
+                </div>
+            </div>
 
         </div>
+
+
+</form>
 
 
 
