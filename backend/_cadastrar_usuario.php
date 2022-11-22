@@ -6,7 +6,6 @@ include 'include/script/password.php';
 try{
 
     $nome = $_POST['nome'];
-    $sobrenome = $_POST['sobrenome'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     $confirmar_senha = $_POST['confirmar_senha'];
@@ -34,7 +33,7 @@ try{
 
     }else{
     
-        $sql = "INSERT INTO tb_cadastro(`nome`, `sobrenome`, `email`, `senha`) VALUES('$nome', '$sobrenome', '$email', sha1('$senha'))";
+        $sql = "INSERT INTO tb_cadastro(`nome`, `email`, `senha`) VALUES('$nome', '$email', sha1('$senha'))";
         $comando = $con->prepare($sql);
         $comando->execute();
 

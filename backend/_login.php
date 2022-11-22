@@ -5,7 +5,7 @@ include 'include/script/password.php';
 
 try{
 
-    $email = $_POST['email'];
+    $usuario = $_POST['usuario'];
     $senha = $_POST['senha'];
     $confirmar_senha = $_POST['confirmar_senha'];
 
@@ -18,7 +18,7 @@ try{
         
     }
 
-    $sql = "SELECT email,senha FROM tb_cadastro WHERE email = '$email' AND BINARY senha = sha1('$senha')";
+    $sql = "SELECT email,senha FROM tb_cadastro WHERE email = '$usuario' AND BINARY senha = sha1('$senha')";
 
     $comando = $con -> prepare($sql);
     $comando -> execute();
