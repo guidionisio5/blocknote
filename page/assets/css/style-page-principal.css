@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #292929;
+}
+
+.container-page{
+    display: grid;
+    gap: 20px;
+}
+
+.linha{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+
+.blocos{
+    display: grid;
+    height: 220px;
+    width: 360px;
+    border: 1px solid rgba(204, 204, 204, 0.253);
+    border: 1px solid #ffffff34;
+    border-radius: 1px;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgba(204, 204, 204, 0.253);
+}
+
+.blocos:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    color: white;
+}
+
+h5{
+    color: white;
+}
+
+.mais{
+    font-size: 6em;
+    color: rgba(204, 204, 204, 0.253);
+}
+
