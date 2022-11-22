@@ -4,25 +4,35 @@
     margin: 0;
 }
 
+
+
 body{
     background-color: #212020;
 }
 
-.img-fundo{
+p{
+    color: white;
+    font-size: 2.5em;
+}
+.container{
     display: grid;
     justify-items: center;
     align-items: center;
+    height: 100vh;
+
+    background-image: url('../img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: 90vh;
+    background-position: center;
 }
 
-.img-fundo img{
-    height: 90vh;
-}
 
 .navbar{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin: 10px;
+    margin-bottom: -40px;
 }
 
 .navbar ul{
@@ -35,5 +45,6 @@ body{
     margin: 10px;
     color: white;
 }
+
 
 
