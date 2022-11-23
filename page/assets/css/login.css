@@ -10,16 +10,15 @@ body{
     background-color: #212020;
 }
 
-p{
+.p{
     color: white;
-    font-size: 2.5em;
+    font-size: 60px;
 }
 .container{
     display: grid;
     justify-items: center;
     align-items: center;
     height: 100vh;
-
     background-image: url('../img/fundo.png');
     background-repeat: no-repeat;
     background-size: 90vh;
@@ -45,6 +44,58 @@ p{
     margin: 10px;
     color: white;
 }
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.item{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.label{
+    color: white;
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+.input{
+    background-color: #292929;
+    border: none;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    font-weight: bold;
+    color: whitesmoke;
+    width: 400px;
+    height: 35px;
+}
+
+
+
+.cadastrar{
+    display: grid;
+    padding: 10px 30px;
+    background-color: #078BB7;
+    text-align: center;
+    color: white;
+    margin: 15px 0px;
+    border: none;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+    justify-self: center;
+    font-size: 18px;
+}
+
 
 
 
