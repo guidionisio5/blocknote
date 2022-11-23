@@ -23,19 +23,22 @@ USE `db_blocknote`;
 CREATE TABLE IF NOT EXISTS `tb_cadastro` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(30) NOT NULL,
-  `sobrenome` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
+  `senha` varchar(50) NOT NULL,
   `data_nascimento` date DEFAULT NULL,
   `telefone` varchar(15) DEFAULT NULL,
   `imagem` varchar(100) DEFAULT NULL,
-  `senha` varchar(50) NOT NULL,
   `data_cadastro` datetime NOT NULL DEFAULT current_timestamp(),
   `ativo` bit(1) NOT NULL DEFAULT b'1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
 
--- Copiando dados para a tabela db_blocknote.tb_cadastro: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela db_blocknote.tb_cadastro: ~3 rows (aproximadamente)
+INSERT INTO `tb_cadastro` (`id`, `nome`, `email`, `senha`, `data_nascimento`, `telefone`, `imagem`, `data_cadastro`, `ativo`) VALUES
+	(20, 'João', 'joao@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', NULL, NULL, NULL, '2022-11-22 20:00:36', b'1'),
+	(21, 'Guilherme', 'gui@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', NULL, NULL, NULL, '2022-11-22 20:19:55', b'1'),
+	(22, 'Lucas', 'lucas@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', NULL, NULL, NULL, '2022-11-22 20:30:14', b'1');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
