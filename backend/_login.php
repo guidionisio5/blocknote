@@ -7,16 +7,6 @@ try{
 
     $usuario = $_POST['usuario'];
     $senha = $_POST['senha'];
-    $confirmar_senha = $_POST['confirmar_senha'];
-
-    if($senha != $confirmar_senha){
-
-        $retorno = array('retorno'=>'erro','mensagem'=>'Senhas são diferentes, verifique e tente novamente!'); 
-        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE); 
-        echo $json;
-        exit;
-        
-    }
 
     $sql = "SELECT email,senha FROM tb_cadastro WHERE email = '$usuario' AND BINARY senha = sha1('$senha')";
 
