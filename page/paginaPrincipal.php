@@ -1,3 +1,4 @@
+<?php include '../backend/_dados_usuario.php' ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
