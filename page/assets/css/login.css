@@ -11,6 +11,7 @@
 
 body{
     background-color: #212020;
+    overflow: hidden;
 }
 
 .p{
@@ -57,16 +58,15 @@ body{
     align-items: center;
 }
 
-
-.form-cadastro{
+.cadastroUser-inputs{
     display: grid;
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: 2fr;
-    gap: 15px;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px 20px;
 }
 
+.itemCadastro{
+    display: grid;
+}
 .item{
     display: grid;
     grid-template-rows: repeat(1, 1fr);
@@ -86,6 +86,7 @@ body{
     color: whitesmoke;
     width: 400px;
     height: 35px;
+    padding: 10px;
 }
 
 
@@ -109,9 +110,23 @@ body{
     font-size: 18px;
 }
 
-.a:hover{
+h3{
     color: white;
+    font-size: 3em;
+    font-weight: 400;
+    margin-left: 25vw;
+    margin-bottom: 45vh;
 }
 
+.container-loader{
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: 90vh;
+    background-position: center;
+}
 
 

@@ -10,10 +10,14 @@
 
     <header>
         <div class="navbar">
-            <img src="page/assets/img/logo2.png" alt="">
+            <img src="page/assets/img/logo2.png" alt="" class="image">
             <ul>
+                <a href="">
                 <li> Entre em Contato</li>
+            </a>
+            <a href="">
                 <li> Dúvidas </li>
+            </a>
             </ul>
 
         </div>   
@@ -26,24 +30,28 @@
     </div> -->
 
     <div class="container">
-        <form id="cadastrarUser" class="form-cadastro">
-            <div><p class="p">Realize seu cadastro!</p></div>
-            <div class="item">
-                <label for="nome" class="label">Nome de usuário</label>
-                <input type="text" name="nome" id="nome" class="input">
+        <form id="cadastrarUser" class="form">
+            <p class="p">Realize seu cadastro!</p>
+
+            <div class="cadastroUser-inputs">
+                <div class="itemCadastro">
+                    <label for="nome" class="label">Nome de usuário</label>
+                    <input type="text" name="nome" id="nome" class="input">
+                </div>
+                <div class="itemCadastro">
+                    <label for="email" class="label">E-mail</label>
+                    <input type="email" name="email" id="email" class="input">
+                </div>
+                <div class="itemCadastro">
+                    <label for="senha" class="label">Senha de acesso</label>
+                    <input type="password" name="senha" id="senha" class="input">
+                </div>
+                <div class="itemCadastro">
+                    <label for="senha" class="label">Confirmar senha</label>
+                    <input type="password" name="confirmar_senha" id="confirmar_senha" class="input"> 
+                </div>
             </div>
-            <div class="item">
-                <label for="email" class="label">E-mail</label>
-                <input type="email" name="email" id="email" class="input">
-            </div>
-            <div class="item">
-                <label for="senha" class="label">Senha de acesso</label>
-                <input type="password" name="senha" id="senha" class="input">
-            </div>
-            <div class="item">
-                <label for="senha" class="label">Confirmar senha</label>
-                <input type="password" name="confirmar_senha" id="confirmar_senha" class="input"> 
-            </div>
+
             <div >
                 <button type="button" onclick="cadastrarUser()" class="cadastrar">CADASTRAR-SE</button>
             </div>

@@ -10,6 +10,7 @@
 body{
     height: 100vh;
     background-color: #292929;
+    overflow: hidden;
 }
 
 .container-page{
@@ -51,6 +52,8 @@ a{
 h5{
     color: white;
 }
+
+
 
 .mais{
     font-size: 6em;
