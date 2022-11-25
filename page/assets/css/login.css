@@ -88,7 +88,7 @@ body{
 .input{
     background-color: #292929;
     border: none;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     font-weight: bold;
     color: whitesmoke;
     width: 400px;
@@ -111,7 +111,7 @@ body{
 }
 
 .a{
-    color: white;
+    color: rgb(114, 114, 114);
     text-decoration: none;
     justify-self: center;
     font-size: 18px;
