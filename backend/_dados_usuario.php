@@ -4,8 +4,8 @@ session_start();
 $login = $_SESSION['loginUser'];
 
 if(!isset($_SESSION['loginUser'])) {
-    header('Location: ../index.html');
-    $_SESSION['error'];
+    $_SESSION['error'] = 'Você não está logado!';
+    header('Location: ../index.php');
 }
 
 // include '../backend/include/conexao.php';

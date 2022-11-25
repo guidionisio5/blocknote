@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +12,7 @@
     <title>Document</title>
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="page/assets/css/login.css">
 </head>
 <body>
@@ -32,6 +37,10 @@
     <div class="container">
         <form id="loginUser" class="form">
             <p class="p">Bem-vindo(a) de Volta!</p>
+            <?php
+                if(isset($_SESSION['error'])) {?>
+                    <div class="mensagem-error" role="alert"><?php echo $_SESSION['error'] ?></div>
+            <?php unset($_SESSION['error']); }	?>
             <div class="item">
                 <label for="usuario" class="label">E-mail</label>
                 <input type="text" name="usuario" id="usuario" class="input">

@@ -49,6 +49,13 @@ body{
     color: white;
 }
 
+.mensagem-error{
+    border: white 1px solid;
+    color: white;
+    background-color: red;
+    padding: 10px;
+}
+
 .form{
     display: grid;
     grid-template-columns: 1fr;

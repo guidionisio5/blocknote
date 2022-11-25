@@ -56,8 +56,7 @@ const loginUser = async () => {
 // final função login usuarios 
 
 
-
-
+// final funçao sair usuario
 const AbreLoader = async () => {
 
   $('body').addClass('animate__animated animate__zoomOut')
