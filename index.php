@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="page/assets/img/Meu projeto.png" type="image/x-icon">
+    <title>BlockNote</title>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -37,7 +38,7 @@
                 <input type="text" name="usuario" id="usuario" class="input">
             </div>
             <div class="item">
-                <label for="senha" class="label">Senha de acesso</label>
+                <label for="senha" class="label">Senha</label>
                 <input type="password" name="senha" id="senha" class="input">
             </div>
                 <button type="button" onclick="loginUser()" class="cadastrar">ENTRAR</button>
