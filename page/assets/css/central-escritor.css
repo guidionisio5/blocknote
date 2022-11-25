@@ -11,6 +11,7 @@
 body{
     height: 100vh;
     background-color: #292929;
+    overflow: hidden;
 }
 
 .container-escritor{
@@ -54,9 +55,12 @@ body{
 }
 
 
+
+
 h5{
     color: white;
     font-weight: bold;
+
 }
 
 .bloco-categoria{

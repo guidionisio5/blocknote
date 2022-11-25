@@ -11,6 +11,7 @@
 
 body{
     background-color: #212020;
+    overflow: hidden;
 }
 
 .p{
@@ -99,6 +100,22 @@ body{
     font-size: 18px;
 }
 
+h3{
+    color: white;
+    font-size: 3em;
+    font-weight: 400;
+    margin-left: 25vw;
+    margin-bottom: 45vh;
+}
 
-
+.container-loader{
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: 90vh;
+    background-position: center;
+}
 
