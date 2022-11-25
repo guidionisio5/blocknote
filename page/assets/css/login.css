@@ -58,6 +58,15 @@ body{
     align-items: center;
 }
 
+.cadastroUser-inputs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px 20px;
+}
+
+.itemCadastro{
+    display: grid;
+}
 .item{
     display: grid;
     grid-template-rows: repeat(1, 1fr);
@@ -77,6 +86,7 @@ body{
     color: whitesmoke;
     width: 400px;
     height: 35px;
+    padding: 10px;
 }
 
 
@@ -118,4 +128,5 @@ h3{
     background-size: 90vh;
     background-position: center;
 }
+
 
