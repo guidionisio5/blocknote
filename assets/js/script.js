@@ -91,3 +91,8 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
     node.addEventListener('animationend', handleAnimationEnd, { once: true });
   });
+
+  $(".option").click(function () {
+    $(".option").removeClass("active");
+    $(this).addClass("active");
+  });
