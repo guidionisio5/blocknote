@@ -11,16 +11,28 @@ const cadastrarUser = () => {
   })
     .then((response => response.json()))
     .then((result) => {
-
-      // Swal.fire({
-      //   icon: result.retorno == 'ok' ? 'success' : 'error',
-      //   title: 'Atenção',
-      //   text: result.mensagem,
-      //   showConfiirmButton: false,
-      //   timer: 5000
-      // })
-
-      result.retorno == 'ok' ? window.location.replace("http://localhost/blocknote/page/paginaPrincipal.php") : ''
+      if(result.retorno == 'erro'){
+        Swal.fire({
+        icon: result.retorno == 'erro' ? 'error' : 'success',
+        title: 'Atenção',
+        text: result.mensagem,
+        showConfiirmButton: false
+      })
+      }else{
+        Swal.fire({
+          title: 'Sucesso',
+          text: result.mensagem,
+          icon: 'success',
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'OK!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.replace("http://localhost/blocknote/index.php")
+          }
+        })
+    
+        
+      }
     })
 }
 // final da função adcionar usuarios   
