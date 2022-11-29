@@ -49,6 +49,10 @@ body{
     color: white;
 }
 
+.a-li{
+    text-decoration: none;
+}
+
 .mensagem-error{
     border: white 1px solid;
     color: white;

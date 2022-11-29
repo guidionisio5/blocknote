@@ -21,8 +21,12 @@ session_start();
         <div class="navbar">
             <img src="page/assets/img/logo2.png" alt="">
             <ul>
-                <li> Entre em Contato</li>
-                <li> Dúvidas </li>
+                <a href="" class="a-li">
+                    <li> Entre em Contato</li>
+                </a>
+                <a href="" class="a-li">
+                    <li> Dúvidas </li>
+                </a>
             </ul>
 
         </div>   
