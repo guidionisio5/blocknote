@@ -25,10 +25,11 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Sobre Nós</a>
+              <a class="nav-link texto-menu" href="central-escritor.php">Central do Escritor</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Central de Ajuda</a>
+              <a class="nav-link texto-menu" href="">Perfil</a>
             </li>
             
           </ul>
