@@ -114,11 +114,22 @@ body{
     cursor: pointer;
 }
 
+.cadastrar:hover{
+    background-color: #056e91;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
 .a{
     color: rgb(114, 114, 114);
     text-decoration: none;
     justify-self: center;
     font-size: 18px;
+}
+
+.a:hover{
+    color: rgba(255, 255, 255, 0.473);
 }
 
 h3{
