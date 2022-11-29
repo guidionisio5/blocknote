@@ -63,7 +63,7 @@ const loginUser = async () => {
         // })
         result.retorno == 'ok' ? window.location.replace("http://localhost/blocknote/include/loader.php") : ''
       })
-  }, 1000);
+  }, 500);
 }
 // final função login usuarios 
 
@@ -75,7 +75,7 @@ const AbreLoader = async () => {
 
   const element = document.querySelector('body');
 
-  element.style.setProperty('--animate-duration', '1.2s');
+  element.style.setProperty('--animate-duration', '1s');
 
 }
 
@@ -102,4 +102,9 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
     }
 
     node.addEventListener('animationend', handleAnimationEnd, { once: true });
+  });
+
+  $(".option").click(function () {
+    $(".option").removeClass("active");
+    $(this).addClass("active");
   });
