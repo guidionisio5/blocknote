@@ -5,7 +5,7 @@ $login = $_SESSION['loginUser'];
 
 if(!isset($_SESSION['loginUser'])) {
     $_SESSION['error'] = 'Você não está logado!';
-    header('Location: ../index.php');
+    header('Location: ../login.php');
 }
 
 // include '../backend/include/conexao.php';

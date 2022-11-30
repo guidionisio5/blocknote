@@ -27,7 +27,7 @@ const cadastrarUser = () => {
           confirmButtonText: 'OK!'
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.replace("http://localhost/blocknote/index.php")
+            window.location.replace("http://localhost/blocknote/login.php")
           }
         })
     
