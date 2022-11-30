@@ -12,7 +12,7 @@
               <a class="nav-link texto-menu" href="#">Lembretes</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link texto-menu" href="#" data-bs-toggle="dropdown"">
+              <a class="nav-link texto-menu" href="#" data-bs-toggle="dropdown">
                 Categoria
               </a>
               <ul class="dropdown-menu texto-menu">
@@ -34,7 +34,20 @@
             
           </ul>
           <div class="d-flex">
-            <img class="logo" src="assets/img/logo.png" alt="">
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/img/user.png" alt="" class="user-img">
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

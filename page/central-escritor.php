@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <?php include '../backend/include/header.php' ?>
+    <?php include '../include/header.php' ?>
 
     <form class="container-escritor">
 
