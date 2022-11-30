@@ -34,20 +34,17 @@
             
           </ul>
           <div class="d-flex">
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/img/user.png" alt="" class="user-img">
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+            <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+              <img src="assets/img/user.png" alt="" class="user-img">
+            </button> 
+              <ul class="dropdown-menu dropdown-menu-end bg-dark ">
+                <li>
+                    <a href="profile.php" class="nav-link texto-menu"><i class="bi bi-person-circle"></i> Profile</a>
                 </li>
+                <li>
+                    <a href="" class="nav-link texto-menu"><i class="bi bi-escape"></i> Sair</a>
+                </li>  
               </ul>
-            </div>
           </div>
         </div>
       </div>
