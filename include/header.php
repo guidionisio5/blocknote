@@ -15,13 +15,10 @@
               <a class="nav-link texto-menu" href="#" data-bs-toggle="dropdown">
                 Categoria
               </a>
-              <ul class="dropdown-menu texto-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu texto-menu bg-dark">
+                <li><a class="dropdown-item texto-menu" href="#">Action</a></li>
+                <li><a class="dropdown-item texto-menu" href="#">Another action</a></li>
+                
               </ul>
             </li>
             <li class="nav-item">
