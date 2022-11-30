@@ -62,16 +62,17 @@ h5{
 
 .sairbtn{
     position: absolute;
-    width: 59px;
-    height: 60px;
-    left: 1270px;
-    top: 17px;
+    width: 30vh;
+    height: 1vh;
+    left: 150vh;
+    top: 1vh;
     font-family: 'K2D';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
     text-align: center;
+    border: none;
     color: #818181;
     background: url(/page/assets/img/exit.png);
 }
