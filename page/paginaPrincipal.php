@@ -19,7 +19,7 @@
     <div class="container-page position-absolute top-50 start-50 translate-middle">
 
         <div>
-            <button class="sairbtn" type="button" onclick="sairUser()">Sair</button>
+           
             <h5>Anotações Recentes</h5>
 
 

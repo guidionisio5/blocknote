@@ -42,7 +42,7 @@
                     <a href="profile.php" class="nav-link texto-menu"><i class="bi bi-person-circle"></i> Profile</a>
                 </li>
                 <li>
-                    <a href="" class="nav-link texto-menu"><i class="bi bi-escape"></i> Sair</a>
+                    <a href="../backend/_logout.php" class="nav-link texto-menu"><i class="bi bi-escape"></i> Sair</a>
                 </li>  
               </ul>
           </div>
