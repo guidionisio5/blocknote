@@ -9,7 +9,7 @@
               <a class="nav-link texto-menu" href="paginaPrincipal.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#">Lembretes</a>
+              <a class="nav-link texto-menu" href="central-escritor.php">Central do Escritor</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link texto-menu" href="#" data-bs-toggle="dropdown">
@@ -24,14 +24,10 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link texto-menu" href="central-escritor.php">Central do Escritor</a>
-            </li>
             
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="">Perfil</a>
+              <a class="nav-link texto-menu" href="#">Lembretes</a>
             </li>
-            
           </ul>
           <div class="d-flex">
             <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">

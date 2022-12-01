@@ -2,6 +2,7 @@
 
 include 'include/conexao.php';
 include 'include/script/password.php';
+include 'include/function.php';
 
 try{
 
@@ -9,6 +10,11 @@ try{
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     $confirmar_senha = $_POST['confirmar_senha'];
+
+    validaCampoVazio($nome,'nome');
+    validaCampoVazio($email,'email');
+    validaCampoVazio($senha,'senha');
+    validaCampoVazio($confirmar_senha,'confirmar_senha');
 
     if($senha != $confirmar_senha){
 
