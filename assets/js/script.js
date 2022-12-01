@@ -23,11 +23,11 @@ const cadastrarUser = () => {
           title: 'Sucesso',
           text: result.mensagem,
           icon: 'success',
-          confirmButtonColor: '#3085d6',
+          confirmButtonColor: '#078BB7',
           confirmButtonText: 'OK!'
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.replace("http://localhost/blocknote/index.php")
+            window.location.replace("http://localhost/blocknote/login.php")
           }
         })
     
@@ -45,7 +45,6 @@ const loginUser = async () => {
   loader = await AbreLoader()
   // animateCSS('.container', 'zoomOut');
 
-  setInterval(function () {
     let dados = new FormData($('#loginUser')[0]);
 
     const result = fetch('backend/_login.php', {
@@ -54,16 +53,17 @@ const loginUser = async () => {
     })
       .then((response => response.json()))
       .then((result) => {
-        // Swal.fire({
-        //   icon: result.retorno == 'ok' ? 'success' : 'error',
-        //   title: 'Atenção',
-        //   text: result.mensagem,
-        //   showConfiirmButton: false,
-        //   timer: 5000
-        // })
-        result.retorno == 'ok' ? window.location.replace("http://localhost/blocknote/include/loader.php") : ''
+        if(result.retorno == 'erro'){
+          FechaLoader()
+          Swal.fire({
+            icon: 'error',
+            title: 'Atenção',
+            text: result.mensagem,
+          })
+        }else{
+          window.location.replace("http://localhost/blocknote/include/loader.php")
+        }
       })
-  }, 500);
 }
 // final função login usuarios 
 
@@ -72,6 +72,16 @@ const loginUser = async () => {
 const AbreLoader = async () => {
 
   $('body').addClass('animate__animated animate__zoomOut')
+
+  const element = document.querySelector('body');
+
+  element.style.setProperty('--animate-duration', '1s');
+
+}
+
+const FechaLoader = async () => {
+
+  $('body').removeClass('animate__animated animate__zoomOut')
 
   const element = document.querySelector('body');
 
