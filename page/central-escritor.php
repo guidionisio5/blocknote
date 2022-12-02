@@ -14,6 +14,7 @@
 
 <body>
     <?php include '../include/header.php' ?>
+    <?php include '../backend/_dados_usuario.php' ?>
 
     <form class="container-escritor">
 
