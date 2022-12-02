@@ -20,7 +20,9 @@ session_start();
 
     <header>
         <div class="navbar">
-            <img src="assets/img/logo2.png" alt="">
+            <a href="index.html">
+                <img src="assets/img/logo2.png" alt="">
+            </a>
             <ul>
                 <a href="" class="a-li">
                     <li> Entre em Contato</li>
