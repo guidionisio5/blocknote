@@ -17,7 +17,8 @@
     <?php include '../include/header.php' ?>
 
     <div class="container-page position-absolute top-50 start-50 translate-middle corpo">
-        <div>
+    <div>
+    <div>
             <h3>Informações do usuário</h3>
         </div>
         <form action="">
@@ -58,9 +59,12 @@
                 </div>
             </div>
         </form>
+    </div>
+        
 
-        <div id="corpo">
-            <h2></h2>
+        <div>
+            <h2>Gestão de Usuário</h2>
+             <img src="assets/img/user.png" alt="imagem do usuario"> 
         </div>
     </div>
 </body>
