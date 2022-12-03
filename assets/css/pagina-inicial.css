@@ -71,6 +71,7 @@ h1{
     height: 300px;
     width: 400px;
     background-color: #181818;
+    
 }
 
 .text-bloco h3{
@@ -173,3 +174,17 @@ h1{
     color: white;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+
+/* ANIMAÇÃO */
+
+.animate__animated.animate__zoomIn {
+    --animate-duration: 1.9s;
+    
+  }
+
+  .animate__animated.animate__backInLeft {
+    --animate-duration: 1.4s;
+  }
+  

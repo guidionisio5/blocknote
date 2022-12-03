@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aguarde</title>
-    <link rel="stylesheet" href="../page/assets/css/login.css">
+    <link rel="stylesheet" href="../page/assets/css/loader.css">
 </head>
 <body>
 
     <header>
         <div class="navbar">
-            <img src="../page/assets/img/logo2.png" alt="">
+            <img src="../assets/img/logo2.png" alt="">
             <ul>
                 <li> Entre em Contato</li>
                 <li> Dúvidas </li>
