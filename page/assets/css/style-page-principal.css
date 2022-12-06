@@ -60,6 +60,23 @@ h5{
     color: rgba(204, 204, 204, 0.253);
 }
 
+.sairbtn{
+    position: absolute;
+    width: 30vh;
+    height: 1vh;
+    left: 150vh;
+    top: 1vh;
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    border: none;
+    color: #818181;
+    background: url(/page/assets/img/exit.png);
+}
+
 .mais:hover{
     color: white;
 }
