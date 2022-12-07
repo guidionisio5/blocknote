@@ -1,0 +1,44 @@
+
+.p-duvidas{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.form-duvidas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.input-desc{
+    background-color: #292929;
+    border: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    font-weight: bold;
+    color: whitesmoke;
+    width: 400px;
+    padding: 20px;
+}
+
+
+.desc-duvidas{
+    height: 200px;
+    background-color: #292929;
+    border: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 20px;
+    resize: none;
+}
+
+.btn-center{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
