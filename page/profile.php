@@ -18,9 +18,10 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-10">
                 <form action="" class="form-grid">
                     <div class="row">
+                    
                         <h3>Informações do usuário</h3>
                     </div>
                     <div class="row grid-center">
@@ -62,25 +63,25 @@
                             </div>
                         </div>
                     </div>
-                    
+                   
 
-                    <div class="row grid-center">
+                    
                     <div class="">
                             <div class="">
                                 <h5>Descrição do Usuário</h5>
                                 <textarea class="desc-grid" name="desc" id="desc" placeholder="lindo,gostoso,sedutor e solteiro"></textarea>
                             </div>
                         </div>
-                    </div>
+                    
                 </form>
                 
             </div>  
         
 
-            <div class="col-lg-3 profile-img">
+            <div class="col-lg-2 profile-img">
                 <div class="img-grid">
                     <div class="">
-                        <h3 class="h3"><i class="far fa-file-image"></i>Gestão de Usuários</h3>
+                        <h5 class="h5"><i class="far fa-file-image"></i>Gestão de Usuário</h5>
                     </div>
                     
                     <div class="">
@@ -111,9 +112,10 @@
                     <div class="">
                         
                     </div>
+                    <br>
 
-                    <div class="">
-                        <button class="btn btn-dark"type="button">SALVAR MUDANÇAS</button>
+                    <div class="btn-div">
+                        <button class="btn-profile"type="button">SALVAR MUDANÇAS</button>
                     </div>
                         
                     
