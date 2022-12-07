@@ -106,6 +106,8 @@ h1{
     height: 400px;
     padding: 40px;
     background-color: #181818;
+    background-position-x: center;
+    
     display: grid;
     align-items: center;
     grid-template-columns: 2fr 1fr;
