@@ -10,63 +10,133 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style-header.css">
-    <link rel="stylesheet" href="../assets/css/style-profile.css">
+    <link rel="stylesheet" href="assets/css/style-profile.css">
 </head>
 
 <body>
-    <?php include '../include/header.php' ?>
+     <?php include '../include/header.php' ?> 
 
-    <div class="container-page position-absolute top-50 start-50 translate-middle corpo">
-    <div>
-    <div>
-            <h3>Informações do usuário</h3>
-        </div>
-        <form action="">
-            <div id="form-grid">
-                <div>
-                    <label for="nome">Nome do usuário</label>
-                    <input type="text" name="nome" id="nome">
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9">
+                <form action="" class="form-grid">
+                    <div class="row">
+                        <h3>Informações do usuário</h3>
+                    </div>
+                    <div class="row grid-center">
+                        <div class="">
+                            <div class="">
+                                <label for="nome">Nome do usuário</label>
+                                <input class="input-grid" type="text" name="nome" id="nome">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <label for="emnail">Email do usuário</label>
+                                <input class="input-grid" type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <label for="senha">Trocar senha</label>
+                                <input class="input-grid" type="password" name="senha" id="senha">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <label for="imagem">Selecionar foto de perfil  </label> 
+                                <input class="input-grid" type="file" name="imagem" id="imagem" class="input-img">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <label for="localizacao">Localização</label>
+                                <input class="input-grid" type="text" name="localizacao" id="localizacao">
+                            </div>
+                        </div>
 
-                <div>
-                    <label for="emnail">Email do usuário</label>
-                    <input type="email" name="email" id="email">
-                </div>
+                        <div class="">
+                            <div class="">
+                                <label for="tel">Telefone</label>
+                                <input class="input-grid" type="text" name="tel" id="tel">
+                            </div>
+                        </div>
+                    </div>
+                    
 
-                <div>
-                    <label for="senha">Trocar senha</label>
-                    <input type="password" name="senha" id="senha">
-                </div>
-
-                <div>
-                    <label for="imagem">Selecionar foto de perfil  </label> 
-                    <input type="file" name="imagem" id="imagem" class="input-img">
-                </div>
-
-                <div>
-                    <label for="localizacao">Localização</label>
-                    <input type="text" name="localizacao" id="localizacao">
-                </div>
-
-                <div>
-                    <label for="tel">Telefone</label>
-                    <input type="text" name="tel" id="tel">
-                </div>
-
-                <div>
-                    <h5>Descrição do Usuário</h5>
-                    <textarea name="desc" id="desc" cols="50" rows="4"></textarea>
-                </div>
-            </div>
-        </form>
-    </div>
+                    <div class="row grid-center">
+                    <div class="">
+                            <div class="">
+                                <h5>Descrição do Usuário</h5>
+                                <textarea class="desc-grid" name="desc" id="desc" placeholder="lindo,gostoso,sedutor e solteiro"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>  
         
 
-        <div>
-            <h2>Gestão de Usuário</h2>
-             <img src="assets/img/user.png" alt="imagem do usuario"> 
+            <div class="col-lg-3 profile-img">
+                <div class="img-grid">
+                    <div class="">
+                        <h3 class="h3"><i class="far fa-file-image"></i>Gestão de Usuários</h3>
+                    </div>
+                    
+                    <div class="">
+                        <img alt="avatar" class="img-user" src="assets/img/user.png">
+                    </div>
+
+                    <div class="img-text">
+                        <h3>Gerso Silva</h3>
+                        <h5>São João Da Boa Vista-SP</h5>
+                    </div>
+
+                    <div class="">
+
+                    </div>
+
+                    <div class="">
+                        
+                    </div>
+
+                    <div class="">
+                        
+                    </div>
+
+                    <div class="">
+                        
+                    </div>
+
+                    <div class="">
+                        
+                    </div>
+
+                    <div class="">
+                        <button class="btn btn-dark"type="button">SALVAR MUDANÇAS</button>
+                    </div>
+                        
+                    
+                    
+                </div>
+               
+
+            </div>
         </div>
+    
+
     </div>
+
+
+
+    <!-- Importação do JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    
+    <!-- Importação JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+ 
+    <!-- Importação JS - SweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
