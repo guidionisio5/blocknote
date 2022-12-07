@@ -24,12 +24,17 @@ session_start();
                 <img src="assets/img/logo2.png" alt="">
             </a>
             <ul>
+                
                 <a href="" class="a-li">
                     <li> Entre em Contato</li>
                 </a>
                 <a href="" class="a-li">
                     <li> Dúvidas </li>
                 </a>
+                <a href="index.html" class="a-li">
+                    <li> Início </li>
+                </a>
+                
             </ul>
 
         </div>   
