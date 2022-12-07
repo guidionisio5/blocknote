@@ -145,7 +145,7 @@ h3{
     justify-items: left;
     align-items: center;
     height: 100vh;
-    background-image: url('../img/fundo.png');
+    background-image: url('../assets/img/fundo.png');
     background-repeat: no-repeat;
     background-size: 90vh;
     background-position: center;
