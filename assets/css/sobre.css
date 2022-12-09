@@ -1,0 +1,40 @@
+.titulo-sobre{
+    color: white;
+    font-size: 60px;
+    padding: 2rem;
+}
+
+.grid-conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(41, 41, 41, 1);
+    padding: 20px 80px;
+}
+
+.img-cima{
+    margin: -90px auto 0px;
+}
+
+.apelido{
+    color: white;
+    font-size: 25px;
+}
+
+.nome{
+    color: rgb(160, 160, 160);
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.sobre-nos{
+    color: white;
+}
