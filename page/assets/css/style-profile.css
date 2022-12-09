@@ -35,6 +35,32 @@ body{
     background-color: rgba(0, 0, 0, 0.459);
     color: whitesmoke;
     border: none;
+    
+}
+
+.icon{
+   padding: 5px 15px;
+}
+
+input[type="file"] {
+    color: white;
+}
+
+#inputTag{
+    display: grid;
+    justify-items: left;
+    margin: -35px 6px 0px;
+    gap: 10px;
+}
+
+.label {
+    height: 43px;
+    text-align: right;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.459);
+    color: #FFF;
+    text-transform: uppercase;
+    display: block;
 }
 
 .desc-grid{
