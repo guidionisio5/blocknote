@@ -34,8 +34,7 @@ body{
     border: 1px solid ;
     background-color: rgba(0, 0, 0, 0.459);
     color: whitesmoke;
-    border: none;
-    
+    border: rgba(128, 128, 128, 0.301) 0.1px solid;
 }
 
 .icon{
@@ -61,6 +60,8 @@ input[type="file"] {
     color: #FFF;
     text-transform: uppercase;
     display: block;
+    border: rgba(128, 128, 128, 0.301) 0.1px solid;
+
 }
 
 .desc-grid{
@@ -68,6 +69,8 @@ input[type="file"] {
     height: 160px;
     padding: 4px 12px;
     resize: none;
+    border: rgba(128, 128, 128, 0.301) 0.1px solid;
+
     color: whitesmoke;
 }
 
