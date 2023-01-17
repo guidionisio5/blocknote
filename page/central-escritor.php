@@ -20,13 +20,16 @@
 
         <div class="escrita">
             <h5>Central do Escritor</h5>
-            <textarea class="bloco-escrever img-fundo" id="img-bloco" onkeydown="tirarImg()" onchange="voltaImg()">
+            <textarea id="myTextarea" class="bloco-escrever img-fundo" id="img-bloco" onkeydown="tirarImg()" onchange="voltaImg()">
 
             </textarea>
             <h5>Descrição</h5>
             <textarea class="bloco-descricao img-descricao" id="txt-descricao" onkeydown="tirarTxt()" onchange="voltaTxt()">
-
+            
             </textarea>
+            <br>
+            <button class="btn-salvar">Salvar</button>
+            
         </div>
 
         <div class="categorias">
@@ -83,8 +86,30 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    
+    <script  src = "assets/js/tinymce/js/tinymce/tinymce.min.js"></script>
     <script src="assets/js/script-img-central.js"></script>
+    <script>
+
+    $( document).ready(function() {
+        tinymce.init({
+                selector: '#myTextarea', 
+                height: 400,
+                width: 800,
+                toolbar: 'undo redo | bold italic underline strikethrough | fontfamily fontsize blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
+                plugins: 'preview importcss searchreplace autolink autosave save direcionality code visualblocks visualchars fullscreen image link media template codesample table charmap pagebreak nonbreaking âncora insertdatetime advlist lists wordcount help charmap quickbars emoticons',
+                language: 'portuguese' 
+            });
+
+            tinymce.init({
+                selector: '.bloco-descricao', 
+                height: 150,
+                width: 800,
+                
+            });
+    });
+       
+        
+    </script>
 </body>
 </body>
 
