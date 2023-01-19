@@ -20,7 +20,7 @@ const cadastrarUser = () => {
       })
       }else{
         Swal.fire({
-          title: 'Sucesso',
+          title: 'Sucesso!',
           text: result.mensagem,
           icon: 'success',
           confirmButtonColor: '#078BB7',

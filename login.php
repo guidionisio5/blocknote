@@ -23,7 +23,7 @@ session_start();
             </a>
             <ul>
                 
-                <a href="" class="a-li">
+                <a href="sobre.html" class="a-li">
                     <li> Sobre nós </li>
                 </a>
                 <a href="duvidas.html" class="a-li">

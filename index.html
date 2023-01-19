@@ -14,17 +14,18 @@
     <header>
         <div class="navbar">
             <ul>
+                
                 <a href="login.php">
                     <li>Login</li>
                 </a>
                 <a href="cadastrarUser.html">
-                    <li>Cadastra-se</li>
+                    <li>Cadastrar-se</li>
                 </a>
                 <a href="duvidas.html">
                     <li>Dúvidas</li>
                 </a>
-                <a href="">
-                    <li>Entre em Contato</li>
+                <a href="sobre.html">
+                    <li>Sobre nós</li>
                 </a>
                 
             </ul>
@@ -32,6 +33,7 @@
                 <img src="assets/img/logo2.png" alt="">
             </div>
         </div>
+    </header>
         <main>
             <div class="container">
 
@@ -64,13 +66,13 @@
 
                 <div class="bloco2">
                     <div class="text-bloco text-right">
-                        <div class="img-enfeite2 animate__animated animate__zoomIn">
+                        <div class="img-enfeite2">
                             <img src="page/assets/img/img2-paginaInicial.png" alt="">
                         </div>
                         <div>
-                            <h3 class="animate__animated animate__backInRight">Lembretes</h3>
+                            <h3 id="h3-bloco2" class="">Lembretes</h3>
                             <br>
-                            <p class="animate__animated animate__backInRight">
+                            <p id="p-bloco2" class="">
                                 Lorem Ipsum is simply dummy text<br>
                                 of the printing and typesetting<br>
                                 industry. Lorem Ipsum has been the<br>
@@ -79,25 +81,25 @@
                         </div>
                         
                     </div>
-                    <div class="img-bloco2 animate__animated  animate__zoomIn animate__delay-1s">
+                    <div class="img-bloco2">
 
                     </div>
                 </div>
 
-                <div class="bloco1">
-                    <div class="img-bloco animate__animated  animate__zoomIn animate__delay-1s">
+                <div id="bloco3" class="bloco1">
+                    <div id="img-bloco3" class="img-bloco">
 
                     </div>
                     <div class="text-bloco">
-                        <h3 class="animate__animated animate__backInLeft">Privacidade</h3>
+                        <h3 id="h3-bloco3">Privacidade</h3>
                         <br>
-                        <p class="animate__animated animate__backInLeft">
+                        <p id="p-bloco3">
                             Lorem Ipsum is simply dummy text<br>
                             of the printing and typesetting<br>
                             industry. Lorem Ipsum has been the<br>
                             industry's standard dummy text ever.
                         </p>
-                        <div class="img-enfeite3 animate__animated animate__zoomIn">
+                        <div class="img-enfeite3">
                             <img src="page/assets/img/img3-paginaInicial.png" alt="">
                         </div>
                     </div>
@@ -107,13 +109,73 @@
         </main>
         <footer>
             <div class="footer ">
-                <h2 class="animate__animated animate__slideInUp">A imaginção não tem limites!</h2>
+                <h2 id="h2-footer">A imaginção não tem limites!</h2>
                 <br>
-                <img class="animate__animated animate__slideInUp" src="page/assets/img/img4-paginaInicial.png" alt="">
+                <img id="img-footer" src="page/assets/img/img4-paginaInicial.png" alt="">
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+        <script>
+           
+            $('.bloco2').waypoint(
+            function(direcao){
+                if(direcao =="down"){
+                    $('.img-enfeite2').addClass('animate__animated animate__zoomIn ')
+                    $('#h3-bloco2').addClass('animate__animated animate__backInRight ')
+                    $('#p-bloco2').addClass('animate__animated animate__backInRight ')
+                    $('.img-bloco2').addClass('animate__animated  animate__zoomIn animate__delay-1s')
+                } if(direcao =="up"){
+                    $('.img-enfeite2').removeClass('animate__animated animate__zoomIn animate__delay-1s')
+                    $('#h3-bloco2').removeClass('animate__animated animate__backInRight animate__delay-1s')
+                    $('#p-bloco2').removeClass('animate__animated animate__backInRight animate__delay-1s')
+                    $('.img-bloco2').removeClass('animate__animated  animate__zoomIn animate__delay-2s')
+                }
+            },{
+
+
+                offset:'710px;'
+            })
+                
+            $('#bloco3').waypoint(
+                
+            function(direcao){
+                if(direcao =="down"){
+                    $('.img-enfeite3').addClass('animate__animated animate__zoomIn')
+                    $('#h3-bloco3').addClass('animate__animated animate__backInLeft')
+                    $('#p-bloco3').addClass('animate__animated animate__backInLeft')
+                    $('#img-bloco3').addClass('animate__animated  animate__zoomIn animate__delay-1s')
+                } if(direcao =="up"){
+                    $('.img-enfeite3').removeClass('animate__animated animate__zoomIn')
+                    $('#h3-bloco3').removeClass('animate__animated animate__backInLeft')
+                    $('#p-bloco3').removeClass('animate__animated animate__backInLeft')
+                    $('#img-bloco3').removeClass('animate__animated  animate__zoomIn animate__delay-1s')
+                }
+            },{
+
+
+                offset:'800px;'
+            })
+
+            $('.footer').waypoint(
+                
+            function(direcao){
+                if(direcao =="down"){
+                    $('#h2-footer').addClass('animate__animated animate__fadeIn')
+                    $('#img-footer').addClass('animate__animated animate__zoomInUp')
+                    
+                } if(direcao =="up"){
+                    $('#h2-footer').removeClass('animate__animated animate__fadeIn animate-delay-1s')
+                    $('#img-footer').removeClass('animate__animated animate__zoomInUp animate-delay-1s')
+                   
+                }
+            },{
+
+
+                offset:'700px;'
+            })
+
             
-        
-    </header>
+      </script>
     </body>
     </html>
