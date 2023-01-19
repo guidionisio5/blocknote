@@ -16,20 +16,20 @@
     <?php include '../include/header.php' ?>
     <?php include '../backend/_dados_usuario.php' ?>
 
-    <form class="container-escritor">
+    <form id="salvarAnotacoes" class="container-escritor">
 
         <div class="escrita">
             <h5>Central do Escritor</h5>
-            <textarea id="myTextarea" class="bloco-escrever img-fundo" id="img-bloco" onkeydown="tirarImg()" onchange="voltaImg()">
+            <textarea id="myTextarea" name="anotacoes" class="bloco-escrever img-fundo" onkeydown="tirarImg()" onchange="voltaImg()">
 
             </textarea>
             <h5>Descrição</h5>
-            <textarea class="bloco-descricao img-descricao" id="txt-descricao" onkeydown="tirarTxt()" onchange="voltaTxt()">
+            <textarea class="bloco-descricao img-descricao" name="descricao" id="myTextarea" onkeydown="tirarTxt()" onchange="voltaTxt()">
             
             </textarea>
-            <br>
-            <button class="btn-salvar">Salvar</button>
-            
+            <div class="mt-3 mb-3">
+                <button class="btn-salvar" onclick="salvarAnotacoes()">Salvar</button>
+            </div>
         </div>
 
         <div class="categorias">
@@ -88,6 +88,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script  src = "assets/js/tinymce/js/tinymce/tinymce.min.js"></script>
     <script src="assets/js/script-img-central.js"></script>
+    <script src="assets/js/script-salvarAnotacoes.js"></script>
     <script>
 
     $( document).ready(function() {
