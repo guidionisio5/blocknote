@@ -16,8 +16,9 @@
                 Categoria
               </a>
               <ul class="dropdown-menu texto-menu bg-dark">
-                <li><a class="dropdown-item texto-menu" href="#">Action</a></li>
-                <li><a class="dropdown-item texto-menu" href="#">Another action</a></li>
+                <li><a class="dropdown-item texto-menu" href="categorias.php">Escola</a></li>
+                <li><a class="dropdown-item texto-menu" href="categorias.php">Livros</a></li>
+                <li><a class="dropdown-item texto-menu" href="categorias.php">Treino</a></li>
                 
               </ul>
             </li>
