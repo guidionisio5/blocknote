@@ -14,25 +14,32 @@
 </head>
 
 <body>
+    <!-- Menu -->
     <?php include '../include/header.php' ?>
-
-    <div class="container-page position-absolute top-50 start-50 translate-middle">
-
-        <div>
-            <h5>Suas categorias</h5>
-            <div class="linha">
-                <a href="#" class="blocos">Escola</a>
-                <div class="blocos">
-                    <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <p class="mais">+</p>
-                    </button>
+        
+        <div class="container">
+            <!-- Conteudo do site -->
+            <div>
+                <div class="titulo">
+                    <h5>Suas categorias</h5>
                 </div>
-                </a>
+                <div class="linha">
+                    <a href="#" class="blocos">Escola</a>
+                    <a href="#" class="blocos">Livros</a>
+                    <div class="blocos">
+                        <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <p class="mais">+</p>
+                        </button>
+                    </div>
+                    </a>
+                </div>
             </div>
+
         </div>
-
     </div>
-
+    
+    
+    
     <!-- Modal -->
     <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
