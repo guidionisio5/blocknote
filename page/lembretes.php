@@ -17,15 +17,10 @@
     <?php include '../include/header.php' ?>
 
     <div class="container-page position-absolute top-50 start-50 translate-middle">
-<div>
-    
-    <div class="lembrete-padding">
-       <h5 class="texto-lembretes">Seus lembretes</h5>
-    </div>
+        
         <div>
-           
             
-
+            <h5>Seus lembretes</h5>
 
             <div class="linha">
                 <a href="" class="blocos">
