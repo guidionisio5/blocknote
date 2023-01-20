@@ -55,6 +55,7 @@
             </div>
         </div>
     </div>
+   <!-- fim do modal -->
 
 
     <!-- Importação do JQuery -->

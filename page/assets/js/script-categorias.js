@@ -35,3 +35,13 @@ const novaCategoria = () =>{
     })
 
 }
+
+const listProducts = () => {
+  const result = fetch('../backend/_listar_categorias.php')
+      .then((response) => response.json())
+      .then((result) => {
+          result.map(product => {
+             
+          })
+      })
+}
