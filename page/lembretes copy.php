@@ -10,22 +10,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style-header.css">
-    <link rel="stylesheet" href="assets/css/style-categorias.css">
+    <link rel="stylesheet" href="assets/css/style-lembretes.css">
 </head>
 
 <body>
     <!-- Menu -->
-    <?php include '../include/header.php' ?>
-        
+    <?php include '../include/header.php'?>
+
         <div class="container">
-            <!-- Conteudo do site -->
+        
             <div>
                 <div class="titulo">
-                    <h5>Suas categorias</h5>
+                    <h5>Seus lembretes</h5>
                 </div>
+
                 <div class="linha">
-                    <a href="#" class="blocos">Escola</a>
-                    <a href="#" class="blocos">Livros</a>
+                    <a href="" class="blocos">
+                        <li class="bolinha"></li>
+                        <h3 class="desc">Churrasco</h3>
+                        <h5 class="desc">13/12/2022</h5>
+                        <p class="desc">19:30</p>
+                        <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
+                    </a>
+
                     <div class="blocos">
                         <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <p class="mais">+</p>
@@ -35,33 +42,6 @@
             </div>
 
         </div>
-    </div>
-    
-    
-    
-    <!-- Modal -->
-    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Nova categoria!</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="form-categoria">
-                    <div class="mb-3">
-                        <label for="categorias" class="col-form-label">Nome da categoria:</label>
-                        <input type="text" class="form-control" name="categorias" id="categorias">
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="novaCategoria()">Salvar</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
 
     <!-- Importação do JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
@@ -75,7 +55,6 @@
     <!-- Importação JS da página -->
     <script src="assets/js/script-logout.js"></script>
     <script src="assets/js/script-img-central.js"></script>
-    <script src="assets/js/script-categorias.js"></script>
 </body>
 </body>
 

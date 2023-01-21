@@ -18,6 +18,12 @@ body{
     gap: 40px;
 }
 
+.titulo{
+    padding: 0px 0px 0px 0px;
+    color: white;
+    font-weight: bold;
+}
+
 .linha{
     display: grid;
     gap: 40px;
@@ -35,7 +41,6 @@ body{
     text-align: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    
 }
 
 a{
@@ -48,13 +53,6 @@ a{
     cursor: pointer;
     color: white;
 }
-
-.titulo{
-    padding: 20px 0px 20px 0px;
-    color: white;
-}
-
-
 
 .mais{
     font-size: 6em;
