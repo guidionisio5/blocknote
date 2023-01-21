@@ -23,15 +23,10 @@
                 <div class="titulo">
                     <h5>Suas categorias</h5>
                 </div>
-                <div class="linha">
-                    <a href="#" class="blocos">Escola</a>
-                    <a href="#" class="blocos">Livros</a>
-                    <div class="blocos">
-                        <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="mais">+</p>
-                        </button>
-                    </div>
-                    </a>
+                <div class="linha" id="bloco-categoria">
+
+                   
+                    
                 </div>
             </div>
 

@@ -4,7 +4,7 @@ include_once('include/conexao.php');
 
 try {
 
-    $sql = "SELECT * FROM tb_categorias";
+    $sql = "SELECT categorias FROM tb_categorias WHERE ativo = 1";
 
     $comando = $con->prepare($sql);
 
