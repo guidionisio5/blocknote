@@ -13,7 +13,7 @@ try{
     validaCampoVazio($email,'email');
     validaCampoVazio($senha,'senha');
 
-    $sql = "SELECT email,senha FROM tb_cadastro WHERE email = '$email' AND BINARY senha = sha1('$senha')";
+    $sql = "SELECT id,email,senha FROM tb_cadastro WHERE email = '$email' AND BINARY senha = sha1('$senha')";
 
     $comando = $con -> prepare($sql);
     $comando -> execute();
