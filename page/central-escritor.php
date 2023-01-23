@@ -35,61 +35,50 @@
 
         <div class="categorias">
             <h5>Categorias</h5>
-            <div class="bloco-categoria">
-                <div class="item-categoria">Escola</div>
-                <div class="item-categoria">Livros</div>
-                <div class="item-categoria">Treino</div>
-                <div class="item-categoria">
-
-                    <p class="adicionar mais">
-                        +
-                    </p>
-
-                </div>
-
-                <div class="item-categoria">
-
-                    <p class="mais">
-                        +
-                    </p>
-
-                </div>
-                <div class="item-categoria">
-
-                <small class="mais">
-                        +
-                </small>
-
-                </div>
+            <div id="bloco-categoria">
+                
             </div>
 
         </div>
 
 
-</form>
+    </form>
+</div>
 
 
-
-
-
-
-
-
-
-
+    <!-- Modal -->
+    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Nova categoria!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-categoria">
+                    <div class="mb-3">
+                        <label for="categorias" class="col-form-label">Nome da categoria:</label>
+                        <input type="text" class="form-control" name="categorias" id="categorias">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="novaCategoria()">Salvar</button>
+            </div>
+            </div>
+        </div>
     </div>
-
-
-
-
-
+   <!-- fim do modal -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script  src = "assets/js/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src = "assets/js/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/script-img-central.js"></script>
     <script src="assets/js/script-salvarAnotacoes.js"></script>
+    <script src="assets/js/script-centralEscritor.js"></script>
+    <script src="assets/js/script-categorias.js"></script>
     
     <script>
 

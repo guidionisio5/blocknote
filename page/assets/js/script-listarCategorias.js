@@ -4,10 +4,7 @@ $(document).ready(function () {
     listarCategorias()
   
   });
-
-
-
-
+  
 const listarCategorias = () => {
     const result = fetch('../backend/_listar_categorias.php')
         .then((response) => response.json())
@@ -15,12 +12,12 @@ const listarCategorias = () => {
           $("#bloco-categoria").html('')
             result.map(categoria => {
                $('#bloco-categoria').append(`
-                  <a href="#" class="item-categoria">${categoria.categorias}</a>
+                  <a href="#" class="blocos">${categoria.categorias}</a>
                `)
             })
   
             $("#bloco-categoria").append(`
-              <div class="item-categoria"> 
+              <div class="blocos"> 
                   <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <p class="mais">+</p>
                   </button>
