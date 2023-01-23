@@ -90,6 +90,7 @@
     <script  src = "assets/js/tinymce/js/tinymce/tinymce.min.js"></script>
     <script src="assets/js/script-img-central.js"></script>
     <script src="assets/js/script-salvarAnotacoes.js"></script>
+    
     <script>
 
     $( document).ready(function() {
