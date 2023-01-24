@@ -1,3 +1,6 @@
+<?php 
+    include '../backend/_dados_usuario.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,12 +18,14 @@
 </head>
 
 <body>
-     <?php include '../include/header.php' ?> 
+     <?php 
+        include '../include/header.php';
+     ?> 
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-10">
-                <form action="" class="form-grid">
+                <form action="" class="form-grid" id="form-profile" method="POST" enctype="multipart/form-data">
                     <div class="row">
                         <h3>Informações do usuário</h3>
                     </div>
@@ -30,12 +35,9 @@
                    
 
                     
-                    <div class="">
-                            <div class="">
-                                <h5>Descrição do Usuário</h5>
-                                <textarea class="desc-grid" name="desc" id="desc" ></textarea>
-                            </div>
-                        </div>
+                    <div id="descricao">
+                        
+                    </div>
                     
                 </form>
                 
@@ -43,19 +45,14 @@
         
 
             <div class="col-lg-2 profile-img">
-                <div class="img-grid">
+                <div class="img-grid" >
                     <div class="">
                         <h5 class="h5">Gestão de Usuário</h5>
                     </div>
+                    <div id="img-profile">
+                        
+                    </div>
                     
-                    <div class="">
-                        <img alt="avatar" class="img-user" src="assets/img/user.png">
-                    </div>
-
-                    <div class="img-text">
-                        <h3>Gerso Silva</h3>
-                        <h5>São João Da Boa Vista-SP</h5>
-                    </div>
 
                     <div class="">
 
@@ -79,7 +76,7 @@
                     <br>
 
                     <div class="btn-div">
-                        <button class="btn-profile"type="button">SALVAR MUDANÇAS</button>
+                        <button class="btn-profile" type="button" onclick="updateProfile()">SALVAR MUDANÇAS</button>
                     </div>
                         
                     
@@ -100,13 +97,11 @@
     
     <!-- Importação JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
- 
-    
+
+    <script src="assets/js/script-profile.js"></script>
 
     <!-- Importação JS - SweetAlert2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script src="assets/js/script-profile.js"></script>
 </body>
 
 </html>

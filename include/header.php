@@ -1,3 +1,9 @@
+<?php 
+
+include '../backend/imagem_usuario.php';
+
+?>
+
 <nav class="navbar navbar-expand-lg header">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +26,11 @@
       </ul>
         <div class="d-flex">
           <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
-            <img src="assets/img/user.png" alt="" class="user-img">
+            <img src="../page/assets/img/<?php if($imagem == null){
+                echo 'user.png';
+              }else{
+                echo 'avatar/'.$imagem;
+              } ?>" alt="" class="user-img">
           </button> 
             <ul class="dropdown-menu dropdown-menu-end bg-dark p-2">
               <li>
