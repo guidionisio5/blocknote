@@ -17,7 +17,7 @@
 .user-img{
     height: 50px;
     top: -8px;
-    border-radius: 0px;
+    border-radius: 50%;
     border: none;
     border-style: none;
     background-color: #1A1A1A;

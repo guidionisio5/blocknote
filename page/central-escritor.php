@@ -15,7 +15,6 @@
 
 <body>
     <?php include '../include/header.php' ?>
-    <?php include '../backend/_dados_usuario.php' ?>
 
     <form id="salvarAnotacoes" class="container-escritor" method="post">
 

@@ -22,15 +22,17 @@ try{
             echo $json;
             exit;   
 
-        } 
-        $hash = md5(uniqid($_FILES['imagem']['tmp_name'],true));
-        $nome_final_imagem = $hash.'.'.$extensao;
-        $pasta = '../page/assets/img/avatar/';
-        move_uploaded_file($_FILES['imagem']['tmp_name'],$pasta.$nome_final_imagem);
+        }else{
+            $hash = md5(uniqid($_FILES['imagem']['tmp_name'],true));
+            $nome_final_imagem = $hash.'.'.$extensao;
+            $pasta = '../page/assets/img/avatar/';
+            move_uploaded_file($_FILES['imagem']['tmp_name'],$pasta.$nome_final_imagem);
 
-        $sql = "UPDATE tb_cadastro SET `imagem` = '$nome_final_imagem' WHERE email = '$login'";
-        $comando = $con->prepare($sql);
-        $comando->execute();
+            $sql = "UPDATE tb_cadastro SET `imagem` = '$nome_final_imagem' WHERE email = '$login'";
+            $comando = $con->prepare($sql);
+            $comando->execute();
+        }
+        
     }
 
     if($senha != ''){
