@@ -30,7 +30,7 @@
                         <h3 class="desc">Churrasco</h3>
                         <h5 class="desc">13/12/2022</h5>
                         <p class="desc">19:30</p>
-                        <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
+                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
                     </a>
 
                     <a href="" class="blocos">
@@ -38,7 +38,7 @@
                         <h3 class="desc">Churrasco</h3>
                         <h5 class="desc">13/12/2022</h5>
                         <p class="desc">19:30</p>
-                        <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
+                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
                     </a>
 
                     <a href="" class="blocos">
@@ -46,7 +46,7 @@
                         <h3 class="desc">Churrasco</h3>
                         <h5 class="desc">13/12/2022</h5>
                         <p class="desc">19:30</p>
-                        <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
+                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
                     </a>
                     <div class="blocos">
                         <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
