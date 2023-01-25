@@ -40,32 +40,41 @@ CREATE TABLE IF NOT EXISTS `tb_cadastro` (
   `nome` varchar(30) NOT NULL,
   `email` varchar(50) NOT NULL,
   `senha` varchar(50) NOT NULL,
-  `data_nascimento` date DEFAULT NULL,
-  `telefone` varchar(15) DEFAULT NULL,
   `imagem` varchar(100) DEFAULT NULL,
+  `localizacao` varchar(50) DEFAULT NULL,
+  `telefone` varchar(15) DEFAULT NULL,
+  `desc` varchar(250) DEFAULT NULL,
   `data_cadastro` datetime NOT NULL DEFAULT current_timestamp(),
   `ativo` bit(1) NOT NULL DEFAULT b'1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4;
 
--- Copiando dados para a tabela db_blocknote.tb_cadastro: ~1 rows (aproximadamente)
+-- Copiando dados para a tabela db_blocknote.tb_cadastro: ~3 rows (aproximadamente)
 /*!40000 ALTER TABLE `tb_cadastro` DISABLE KEYS */;
-INSERT INTO `tb_cadastro` (`id`, `nome`, `email`, `senha`, `data_nascimento`, `telefone`, `imagem`, `data_cadastro`, `ativo`) VALUES
-	(23, 'joao', 'joao@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', NULL, NULL, NULL, '2023-01-19 19:34:58', b'1');
+INSERT INTO `tb_cadastro` (`id`, `nome`, `email`, `senha`, `imagem`, `localizacao`, `telefone`, `desc`, `data_cadastro`, `ativo`) VALUES
+	(24, 'gui', 'gui@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', NULL, NULL, NULL, NULL, '2023-01-23 19:59:37', b'1'),
+	(25, 'lucas', 'lucas@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', NULL, NULL, NULL, NULL, '2023-01-23 20:18:00', b'1'),
+	(27, 'João Pedro Tódero Viana', 'joao@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '45312588afb5d94da7956629fd7602c4.png', 'São João da Boa Vista - SP', '(19) 98427-2807', 'descrição sobre o gui, ele é legal', '2023-01-24 19:18:30', b'1');
 /*!40000 ALTER TABLE `tb_cadastro` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela db_blocknote.tb_categorias
 CREATE TABLE IF NOT EXISTS `tb_categorias` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `categoria` varchar(50) NOT NULL,
+  `categorias` varchar(50) NOT NULL,
   `ativo` bit(1) NOT NULL DEFAULT b'1',
   `data_cadastro` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 
--- Copiando dados para a tabela db_blocknote.tb_categorias: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela db_blocknote.tb_categorias: ~6 rows (aproximadamente)
 /*!40000 ALTER TABLE `tb_categorias` DISABLE KEYS */;
+INSERT INTO `tb_categorias` (`id`, `categorias`, `ativo`, `data_cadastro`) VALUES
+	(2, 'escola', b'1', '2023-01-20 20:06:38'),
+	(3, 'Treino', b'1', '2023-01-20 20:15:38'),
+	(7, 'estudos de casa', b'1', '2023-01-20 20:29:13'),
+	(8, 'dieta', b'1', '2023-01-20 20:29:33'),
+	(9, 'minecraft', b'1', '2023-01-20 20:29:40');
 /*!40000 ALTER TABLE `tb_categorias` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela db_blocknote.tb_duvidas
@@ -79,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `tb_duvidas` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
--- Copiando dados para a tabela db_blocknote.tb_duvidas: ~1 rows (aproximadamente)
+-- Copiando dados para a tabela db_blocknote.tb_duvidas: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `tb_duvidas` DISABLE KEYS */;
 INSERT INTO `tb_duvidas` (`id`, `nome`, `email`, `duvida`, `ativo`, `data_cadastro`) VALUES
 	(1, 'ao trem que pula', 'kleber@gmail.com', 'minha duvida é sobre o programamdor deste site pq ele é horrível mds, que cara ruim, t', b'1', '2023-01-19 19:33:45');

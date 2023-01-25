@@ -16,39 +16,42 @@
 <body>
     <?php include '../include/header.php' ?>
 
-    <div class="container-page position-absolute top-50 start-50 translate-middle">
+        <div class="container">
+            <div>
+                <div>
+                    <h5>Anotações Recentes</h5>
+                </div>
 
-        <div>
-           
-            <h5>Anotações Recentes</h5>
+                <div class="linha">
+                    <a href="" class="blocos">Capa de Proteção</a>
+                    <a href="" class="blocos">Capa de Proteção</a>
+                    <a href="central-escritor.php" class="blocos">
 
-
-            <div class="linha">
-                <a href="" class="blocos">Capa de Proteção</a>
-                <a href="" class="blocos">Capa de Proteção</a>
-                <a href="central-escritor.php" class="blocos">
-
-                    <p class="adicionar mais">
-                        +
-                    </p>
-                </a>
+                        <p class="adicionar mais">
+                            +
+                        </p>
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <div>
-            <h5>Favoritos</h5>
-            <div class="linha">
-                <a href="" class="blocos">Capa de Proteção</a>
-                <a href="" class="blocos">Capa de Proteção</a>
-                <a href="central-escritor.php" class="blocos">
+            <div>
+                <div>
+                    <h5>Favoritos</h5>
+                </div>
+                
+                <div class="linha">
+                    <a href="" class="blocos">Capa de Proteção</a>
+                    <a href="" class="blocos">Capa de Proteção</a>
+                    <a href="central-escritor.php" class="blocos">
 
-                    <p class="adicionar mais">
-                        +
-                    </p>
-                </a>
+                        <p class="adicionar mais">
+                            +
+                        </p>
+                    </a>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
 
     <!-- Importação do JQuery -->

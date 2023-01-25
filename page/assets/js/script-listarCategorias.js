@@ -12,12 +12,15 @@ const listarCategorias = () => {
           $("#bloco-categoria").html('')
             result.map(categoria => {
                $('#bloco-categoria').append(`
-                  <a href="#" class="blocos">${categoria.categorias}</a>
+                  <a href="#" class="blocos">
+                  ${categoria.categorias}
+                  <p><button type="button" class="btn btn-deletar">Deletar Categorias</button></p>
+                  </a>
                `)
             })
   
             $("#bloco-categoria").append(`
-              <div class="blocos"> 
+              <div class="blocos-mais"> 
                   <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <p class="mais">+</p>
                   </button>

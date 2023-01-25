@@ -13,11 +13,13 @@ const listarCategorias = () => {
         .then((response) => response.json())
         .then((result) => {
           $("#bloco-categoria").html('')
+
             result.map(categoria => {
-               $('#bloco-categoria').append(`
+              $('#bloco-categoria').append(`
                   <a href="#" class="item-categoria">${categoria.categorias}</a>
-               `)
+              `)
             })
+           
   
             $("#bloco-categoria").append(`
               <div class="item-categoria"> 
@@ -26,5 +28,19 @@ const listarCategorias = () => {
                   </button>
               </div>
             `)
+
+            result.map(categoria => {
+              $('#option-categoria').append(`
+                  <option value="" class="item-categoria">${categoria.categorias}</a>
+              `)
+            })
+          
         })
-  }
+}
+
+const abreModalSalvar = () => {
+  
+  var myModal = new bootstrap.Modal(document.getElementById('deleteModal'))
+  myModal.show()
+
+}

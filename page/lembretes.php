@@ -25,39 +25,29 @@
                 </div>
 
                 <div class="linha">
-                    <div class="item-linha">
-                        <div class="bolinha"></div>
-                        <a href="" class="blocos">
-                        
-                            <h3 class="desc">Churrasco</h3>
-                            <h5 class="desc">13/12/2022</h5>
-                            <p class="desc">19:30</p>
-                            <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
-                        </a>
-                    </div>
-                    <div class="item-linha">
-                        <div class="bolinha"></div>
-                        <a href="" class="blocos">
-                        
-                            <h3 class="desc">Churrasco</h3>
-                            <h5 class="desc">13/12/2022</h5>
-                            <p class="desc">19:30</p>
-                            <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
-                        </a>
-                    </div>
+                    <a href="" class="blocos">
+                        <li class="bolinha"></li>
+                        <h3 class="desc">Churrasco</h3>
+                        <h5 class="desc">13/12/2022</h5>
+                        <p class="desc">19:30</p>
+                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
+                    </a>
 
-                    <div class="item-linha">
-                        <div class="bolinha"></div>
-                        <a href="" class="blocos">
-                        
-                            <h3 class="desc">Churrasco</h3>
-                            <h5 class="desc">13/12/2022</h5>
-                            <p class="desc">19:30</p>
-                            <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
-                        </a>
-                    </div>
+                    <a href="" class="blocos">
+                        <li class="bolinha"></li>
+                        <h3 class="desc">Churrasco</h3>
+                        <h5 class="desc">13/12/2022</h5>
+                        <p class="desc">19:30</p>
+                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
+                    </a>
 
-                    <div class="item-linha">
+                    <a href="" class="blocos">
+                        <li class="bolinha"></li>
+                        <h3 class="desc">Churrasco</h3>
+                        <h5 class="desc">13/12/2022</h5>
+                        <p class="desc">19:30</p>
+                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
+                    </a>
                     <div class="blocos">
                         <button type="button" class="btn btn-adicionar" onclick="novoLembrete()" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <p class="mais">+</p>
