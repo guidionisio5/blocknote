@@ -113,3 +113,12 @@ h5{
     color: #818181;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
+#modal-cor{
+    background-color: #292929;
+}
+
+
+.input-cor{
+    background-color: #82818120;
+}
