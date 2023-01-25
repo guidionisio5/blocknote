@@ -14,69 +14,49 @@
 </head>
 
 <body>
-    <?php include '../include/header.php' ?>
+    <!-- Menu -->
+    <?php include '../include/header.php'?>
 
-    <div class="container-page position-absolute top-50 start-50 translate-middle">
+        <div class="container">
         
-        <div>
-            
-            <h5>Seus lembretes</h5>
+            <div>
+                <div class="titulo">
+                    <h5>Seus lembretes</h5>
+                </div>
 
-            <div class="linha">
-                <a href="" class="blocos">
-                    <li class="bolinha"></li>
-                    <h3 class="desc">Churrasco</h3>
-                    <h5 class="desc">13/12/2022</h5>
-                    <p class="desc">19:30</p>
-                    <img src="assets/img/check.png" alt="" class="check-img">
-                  </a>
-                
-                
-                <a href="" class="blocos">
-                    <li class="bolinha"></li>
-                    <h3 class="desc">Aniversário</h3>
-                    <h5 class="desc">07/01/2023</h5>
-                    <p class="desc">00:00</p>
-                    <img src="assets/img/close.png" alt="" class="check-img">
-                </a>
+                <div class="linha">
+                    <a href="" class="blocos">
+                        <li class="bolinha"></li>
+                        <h3 class="desc">Churrasco</h3>
+                        <h5 class="desc">13/12/2022</h5>
+                        <p class="desc">19:30</p>
+                        <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
+                    </a>
 
-                <a href="central-escritor.php" class="blocos">
-                    <li class="bolinha"></li>
-                    <h3 class="desc">Prova</h3>
-                    <h5 class="desc">10/12/2022</h5>
-                    <p class="desc">13:30</p>
-                </a>
+                    <a href="" class="blocos">
+                        <li class="bolinha"></li>
+                        <h3 class="desc">Churrasco</h3>
+                        <h5 class="desc">13/12/2022</h5>
+                        <p class="desc">19:30</p>
+                        <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
+                    </a>
+
+                    <a href="" class="blocos">
+                        <li class="bolinha"></li>
+                        <h3 class="desc">Churrasco</h3>
+                        <h5 class="desc">13/12/2022</h5>
+                        <p class="desc">19:30</p>
+                        <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
+                    </a>
+                    <div class="blocos">
+                        <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <p class="mais">+</p>
+                        </button>
+                    </div>
+                </div>
             </div>
+
         </div>
-       
-        <br>
-        
-
-        <div>
-            <div class="linha">
-                <a href="" class="blocos">
-                  <li class="bolinha"></li>
-                  <h1></h1>
-                  <h1></h1>
-                  <h1></h1>
-                </a>
-
-                <a href="" class="blocos">
-                  <li class="bolinha"></li>
-                  <h1></h1>
-                  <h1></h1>
-                  <h1></h1>
-                </a>
-
-                <a href="central-escritor.php" class="blocos">
-                  <li class="bolinha"></li>
-                  <h1></h1>
-                  <h1></h1>
-                  <h1></h1>
-                </a>
-            </div>
-        </div>
-
     </div>
 
     <!-- Importação do JQuery -->
