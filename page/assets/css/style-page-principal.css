@@ -10,12 +10,12 @@
 body{
     height: 100vh;
     background-color: #292929;
-    overflow: hidden;
 }
 
-.container-page{
+.container{
     display: grid;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .linha{

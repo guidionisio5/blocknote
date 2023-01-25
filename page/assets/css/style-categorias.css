@@ -39,6 +39,18 @@ body{
     border: 1px solid #ffffff34;
     border-radius: 1px;
     text-align: center;
+    align-items: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.blocos-mais{
+    display: grid;
+    height: 220px;
+    width: 360px;
+    border: 1px solid rgba(204, 204, 204, 0.253);
+    border: 1px solid #ffffff34;
+    border-radius: 1px;
+    text-align: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -46,6 +58,7 @@ body{
 a{
     text-decoration: none;
     color: rgba(204, 204, 204, 0.253);
+    font-size: 25px;
 }
 
 .blocos:hover{
@@ -73,21 +86,12 @@ a{
     color: white;
 }
 
-.sairbtn{
-    position: absolute;
-    width: 30vh;
-    height: 1vh;
-    left: 150vh;
-    top: 1vh;
-    font-family: 'K2D';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
-    text-align: center;
-    border: none;
+.btn-deletar{
+    padding: 7px 15px;
+    background-color: #2C2C2C;
+    border: 1px solid rgba(204, 204, 204, 0.253);
     color: #818181;
-    background: url(/page/assets/img/exit.png);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .mais:hover{
