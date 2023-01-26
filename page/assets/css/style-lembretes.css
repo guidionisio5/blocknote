@@ -27,22 +27,21 @@ body{
 .linha{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    gap: 40px;
-    margin-top: 5px;
-    margin: 20px;
+    gap:10px;
+   
 }
 
 .blocos{
     display: grid;
     height: 220px;
-    width: 360px;
+    width: 100%;
     border: 1px solid rgba(204, 204, 204, 0.253);
     border: 1px solid #ffffff34;
     border-radius: 10px;
     text-align: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 30px 0px 10px 0px;
 }
 
 a{
@@ -51,8 +50,7 @@ a{
 }
 
 .blocos:hover{
-    transform: scale(1.03);
-    cursor: pointer;
+   
 }
 
 .desc{
@@ -60,8 +58,13 @@ a{
 }
 
 .bolinha{
-    margin: 0px 290px 0px 0px;
-    color: rgba(158, 153, 153, 0.842);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color:#FFF;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
 .btn-deletar{
@@ -80,4 +83,14 @@ a{
 
 .mais:hover{
     color: white;
+}
+
+.item-linha{
+    position: relative;
+    
+}
+
+.item-linha:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }
