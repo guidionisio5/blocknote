@@ -48,8 +48,6 @@
                         <label for="data-lembrete" class="col-form-label">Data:</label>
                         <input type="date" class="form-control" name="data-lembrete" id="data-lembrete">
                     </div>
-                
-                    </div>
                     <div class="mb-3">
                         <label for="horario" class="col-form-label">Horário:</label>
                         <input type="time" class="form-control" name="horario" id="horario">
