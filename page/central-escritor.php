@@ -86,7 +86,7 @@
                         <div class="mb-3">
                             <label for="categorias" class="col-form-label texto-menu" >Categoria:</label>
                             <select class="form-select input-cor texto-menu" aria-label="Default select example" id="option-categoria">
-                                <option selected>Escolha uma categoria</option>
+                                <option class="option-cor" selected disabled>Escolha uma categoria</option>
                                 
                             </select>
                         </div>
