@@ -38,16 +38,16 @@
     <!-- Modal -->
     <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content" id="modal-cor">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Nova categoria!</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5 texto-menu" id="exampleModalLabel">Nova categoria!</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form id="form-categoria">
                     <div class="mb-3">
-                        <label for="categorias" class="col-form-label">Nome da categoria:</label>
-                        <input type="text" class="form-control" name="categorias" id="categorias">
+                        <label for="categorias" class="col-form-label texto-menu">Nome da categoria:</label>
+                        <input type="text" class="form-control input-cor" name="categorias" id="categorias">
                     </div>
                 </form>
             </div>

@@ -31,7 +31,7 @@ const listarCategorias = () => {
 
             result.map(categoria => {
               $('#option-categoria').append(`
-                  <option value="" class="item-categoria">${categoria.categorias}</a>
+                  <option value="${categoria.id}" class="">${categoria.categorias}</option>
               `)
             })
           

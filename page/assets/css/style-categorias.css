@@ -97,3 +97,12 @@ a{
 .mais:hover{
     color: white;
 }
+
+#modal-cor{
+    background-color: #292929;
+}
+
+
+.input-cor{
+    background-color: #82818120;
+}
