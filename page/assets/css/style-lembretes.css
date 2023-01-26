@@ -27,8 +27,7 @@ body{
 .linha{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap:10px;
-   
+    gap: 50px;
 }
 
 .blocos{
@@ -44,14 +43,23 @@ body{
     padding: 30px 0px 10px 0px;
 }
 
+.blocos-mais{
+    display: grid;
+    height: 220px;
+    width: 100%;
+    border: 1px solid rgba(204, 204, 204, 0.253);
+    border: 1px solid #ffffff34;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 a{
     text-decoration: none;
     color: rgba(204, 204, 204, 0.253);
 }
 
-.blocos:hover{
-   
-}
 
 .desc{
     color: #818181;
@@ -93,4 +101,14 @@ a{
 .item-linha:hover{
     transform: scale(1.03);
     cursor: pointer;
+}
+
+#modal-cor{
+    background-color: #292929;
+}
+
+
+.input-cor{
+    background-color: #82818120;
+    color: #fff;
 }

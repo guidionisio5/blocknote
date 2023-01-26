@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `tb_cadastro` (
 INSERT INTO `tb_cadastro` (`id`, `nome`, `email`, `senha`, `imagem`, `localizacao`, `telefone`, `desc`, `data_cadastro`, `ativo`) VALUES
 	(24, 'gui', 'gui@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', NULL, NULL, NULL, NULL, '2023-01-23 19:59:37', b'1'),
 	(25, 'lucas', 'lucas@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', NULL, NULL, NULL, NULL, '2023-01-23 20:18:00', b'1'),
-	(27, 'João Pedro Tódero Viana', 'joao@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '45312588afb5d94da7956629fd7602c4.png', 'São João da Boa Vista - SP', '(19) 98427-2807', 'descrição sobre o gui, ele é legal', '2023-01-24 19:18:30', b'1');
+	(27, 'João Pedro Tódero Viana', 'joao@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '8a409998b659855b0a2dda48ec800b5d.png', 'São João da Boa Vista - SP', '(19) 98427-2807', 'descrição sobre o gui, ele é legal', '2023-01-24 19:18:30', b'1');
 /*!40000 ALTER TABLE `tb_cadastro` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela db_blocknote.tb_categorias
@@ -65,16 +65,16 @@ CREATE TABLE IF NOT EXISTS `tb_categorias` (
   `ativo` bit(1) NOT NULL DEFAULT b'1',
   `data_cadastro` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4;
 
--- Copiando dados para a tabela db_blocknote.tb_categorias: ~6 rows (aproximadamente)
+-- Copiando dados para a tabela db_blocknote.tb_categorias: ~5 rows (aproximadamente)
 /*!40000 ALTER TABLE `tb_categorias` DISABLE KEYS */;
 INSERT INTO `tb_categorias` (`id`, `categorias`, `ativo`, `data_cadastro`) VALUES
-	(2, 'escola', b'1', '2023-01-20 20:06:38'),
-	(3, 'Treino', b'1', '2023-01-20 20:15:38'),
-	(7, 'estudos de casa', b'1', '2023-01-20 20:29:13'),
-	(8, 'dieta', b'1', '2023-01-20 20:29:33'),
-	(9, 'minecraft', b'1', '2023-01-20 20:29:40');
+	(27, 'estudos de casa', b'1', '2023-01-25 19:09:43'),
+	(29, 'Treino', b'1', '2023-01-25 19:10:00'),
+	(30, 'minecraft', b'1', '2023-01-25 19:10:43'),
+	(31, 'adad', b'1', '2023-01-25 19:12:00'),
+	(32, 'adadda', b'1', '2023-01-25 19:12:10');
 /*!40000 ALTER TABLE `tb_categorias` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela db_blocknote.tb_duvidas
@@ -86,20 +86,36 @@ CREATE TABLE IF NOT EXISTS `tb_duvidas` (
   `ativo` bit(1) NOT NULL DEFAULT b'1',
   `data_cadastro` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
--- Copiando dados para a tabela db_blocknote.tb_duvidas: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela db_blocknote.tb_duvidas: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `tb_duvidas` DISABLE KEYS */;
 INSERT INTO `tb_duvidas` (`id`, `nome`, `email`, `duvida`, `ativo`, `data_cadastro`) VALUES
-	(1, 'ao trem que pula', 'kleber@gmail.com', 'minha duvida é sobre o programamdor deste site pq ele é horrível mds, que cara ruim, t', b'1', '2023-01-19 19:33:45');
+	(1, 'ao trem que pula', 'kleber@gmail.com', 'minha duvida é sobre o programamdor deste site pq ele é horrível mds, que cara ruim, t', b'1', '2023-01-19 19:33:45'),
+	(2, 'jonas', 'jonas@gmail.com', 'minha duvida é o pq a vida é  uma loucura', b'1', '2023-01-25 19:21:29');
 /*!40000 ALTER TABLE `tb_duvidas` ENABLE KEYS */;
+
+-- Copiando estrutura para tabela db_blocknote.tb_lembretes
+CREATE TABLE IF NOT EXISTS `tb_lembretes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(50) NOT NULL,
+  `data_lembrete` date NOT NULL,
+  `tempo` varchar(5) NOT NULL DEFAULT '',
+  `data_cadastro` datetime NOT NULL DEFAULT current_timestamp(),
+  `ativo` bit(1) NOT NULL DEFAULT b'1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+
+-- Copiando dados para a tabela db_blocknote.tb_lembretes: ~3 rows (aproximadamente)
+/*!40000 ALTER TABLE `tb_lembretes` DISABLE KEYS */;
+INSERT INTO `tb_lembretes` (`id`, `titulo`, `data_lembrete`, `tempo`, `data_cadastro`, `ativo`) VALUES
+	(1, 'Churrasco', '2023-02-09', '18:30', '2023-01-25 20:32:08', b'1'),
+	(2, 'Festa', '2023-03-18', '20:00', '2023-01-25 20:32:30', b'1'),
+	(3, 'Futebol', '2023-02-02', '17:00', '2023-01-25 20:32:57', b'1'),
+	(4, 'Treino', '2023-01-28', '07:00', '2023-01-25 21:04:09', b'1');
+/*!40000 ALTER TABLE `tb_lembretes` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-<<<<<<< HEAD
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-=======
-/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
-db_blocknotedb_petshopdb_petshopdb_petshopdb_academia
->>>>>>> Lucas

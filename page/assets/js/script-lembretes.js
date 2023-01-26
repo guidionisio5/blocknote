@@ -54,7 +54,7 @@ const listarLemretes = () => {
                     <h3 class="desc">${lembrete.titulo}</h3>
                     <h5 class="desc">${lembrete.data_lembrete}</h5>
                     <p class="desc">${lembrete.tempo}</p>
-                    <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
+                    <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
                 </div>
             </div>
               `)
@@ -62,7 +62,7 @@ const listarLemretes = () => {
 
           $("#bloco-lembrete").append(`
             <div class="item-linha">
-              <div class="blocos">
+              <div class="blocos-mais">
                   <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <p class="mais">+</p>
                   </button>

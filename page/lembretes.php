@@ -33,26 +33,24 @@
     <!-- Modal -->
     <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content" id="modal-cor">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Lembrete!</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5 texto-menu" id="exampleModalLabel">Novo Lembrete!</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form id="form-lembrete">
                     <div class="mb-3">
-                        <label for="titulo" class="col-form-label">Título:</label>
-                        <input type="text" class="form-control" name="titulo" id="titulo">
+                        <label for="titulo" class="col-form-label texto-menu">Título:</label>
+                        <input type="text" class="form-control input-cor" name="titulo" id="titulo">
                     </div>
                     <div class="mb-3">
-                        <label for="data-lembrete" class="col-form-label">Data:</label>
-                        <input type="date" class="form-control" name="data-lembrete" id="data-lembrete">
-                    </div>
-                
+                        <label for="data-lembrete" class="col-form-label texto-menu">Data:</label>
+                        <input type="date" class="form-control input-cor" name="data-lembrete" id="data-lembrete">
                     </div>
                     <div class="mb-3">
-                        <label for="horario" class="col-form-label">Horário:</label>
-                        <input type="time" class="form-control" name="horario" id="horario">
+                        <label for="horario" class="col-form-label texto-menu">Horário:</label>
+                        <input type="time" class="form-control input-cor" name="horario" id="horario">
                     </div>
                 </form>
             </div>
@@ -74,7 +72,8 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  
     <!-- Importação JS da página -->
-    <script src="assets/js/script-logout.js"></script>
+    <script src="assets/js/script
+    -logout.js"></script>
     <script src="assets/js/script-img-central.js"></script>
     <script src="assets/js/script-lembretes.js"></script>
 </body>
