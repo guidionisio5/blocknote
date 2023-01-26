@@ -4,7 +4,7 @@ include_once('include/conexao.php');
 
 try {
 
-    $sql = "SELECT titulo,data_lembrete,tempo FROM tb_lembretes WHERE ativo = 1";
+    $sql = "SELECT id,titulo,data_lembrete,tempo FROM tb_lembretes WHERE ativo = 1";
 
     $comando = $con->prepare($sql);
 
