@@ -23,37 +23,6 @@
                 <div class="titulo">
                     <h5>Seus lembretes</h5>
                 </div>
-
-<<<<<<< Updated upstream
-                <div class="linha">
-                    <a href="" class="blocos">
-                        <li class="bolinha"></li>
-                        <h3 class="desc">Churrasco</h3>
-                        <h5 class="desc">13/12/2022</h5>
-                        <p class="desc">19:30</p>
-                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
-                    </a>
-
-                    <a href="" class="blocos">
-                        <li class="bolinha"></li>
-                        <h3 class="desc">Churrasco</h3>
-                        <h5 class="desc">13/12/2022</h5>
-                        <p class="desc">19:30</p>
-                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
-                    </a>
-
-                    <a href="" class="blocos">
-                        <li class="bolinha"></li>
-                        <h3 class="desc">Churrasco</h3>
-                        <h5 class="desc">13/12/2022</h5>
-                        <p class="desc">19:30</p>
-                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
-                    </a>
-                    <div class="blocos">
-                        <button type="button" class="btn btn-adicionar" onclick="novoLembrete()" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="mais">+</p>
-                        </button>
-=======
                 <div class="linha" id="bloco-lembrete">
                  
                 </div>
@@ -78,7 +47,8 @@
                     <div class="mb-3">
                         <label for="data-lembrete" class="col-form-label">Data:</label>
                         <input type="date" class="form-control" name="data-lembrete" id="data-lembrete">
->>>>>>> Stashed changes
+                    </div>
+                
                     </div>
                     <div class="mb-3">
                         <label for="horario" class="col-form-label">Horário:</label>
