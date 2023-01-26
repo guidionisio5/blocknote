@@ -78,13 +78,13 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="form-anotacoes">
+                    <form id="form-anotacoes" method="POST">
                         <div class="mb-3">
-                            <label for="categorias" class="col-form-label texto-menu">Nome da categoria:</label>
-                            <input type="text" class="form-control input-cor" name="titulo-categoria" id="titulo-categoria">
+                            <label for="titulo" class="col-form-label texto-menu">Título:</label>
+                            <input type="text" class="form-control input-cor" name="titulo" id="titulo">
                         </div>
                         <div class="mb-3">
-                            <label for="categorias" class="col-form-label texto-menu" >Categoria:</label>
+                            <label for="categorias" class="col-form-label texto-menu">Categoria:</label>
                             <select class="form-select input-cor texto-menu" aria-label="Default select example" id="option-categoria">
                                 <option class="option-cor" selected disabled>Escolha uma categoria</option>
                                 
@@ -93,7 +93,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="novaCategoria()">Salvar</button>
+                    <button type="button" class="btn btn-primary" onclick="salvarAnotacoes()">Salvar</button>
                 </div>
             </div>
         </div>

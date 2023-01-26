@@ -2,11 +2,13 @@ const salvarAnotacoes = () =>{
     
   // captura todo formulário e cria um formData
   let notas = new FormData($('#salvarAnotacoes')[0]);
+  
+  let dados = new FormData($('#form-anotacoes')[0]);
 
   // envio e recebimento das notas
   const result = fetch('../backend/_salvar_anotacoes.php', {
     method: 'POST',
-    body: notas
+    body: notas,dados
   })
     .then((response => response.json()))
     .then((result) => {
@@ -26,7 +28,7 @@ const salvarAnotacoes = () =>{
           confirmButtonText: 'OK!'
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.replace("http://localhost/blocknote/page/paginaPrincipal.php")
+            window.location.replace("http://localhost/blocknote/page/central-escritor.php")
           }
         })
     

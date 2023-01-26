@@ -5,17 +5,20 @@ include 'include/function.php';
 
 try{
 
+    // $titulo = $_POST['titulo'];
     $anotacoes = $_POST['anotacoes'];
     $descricao = $_POST['descricao'];
-    $categoria = $_POST['categoria'];
+    // $categoria = $_POST['categorias'];
 
-    // validaCampoVazio($nome,'nome');
+    // validaCampoVazio($titulo,'titulo');
+    validaCampoVazio($anotacoes,'anotacoes');
+    // validaCampoVazio($categoria,'categorias');
 
-    $sql = "INSERT INTO tb_anotacoes(`anotacoes`, `descricao`, `id_categorias`) VALUES('$anotacoes', '$descricao', '$categoria')";
+    $sql = "INSERT INTO tb_anotacoes( `anotacao`, `descricao`) VALUES('$anotacoes', '$descricao')";
     $comando = $con->prepare($sql);
     $comando->execute();
 
-    $retorno = array('retorno'=>'ok','mensagem'=>'Anotações salva com sucesso!');
+    $retorno = array('retorno'=>'ok','mensagem'=>'Anotação salva com sucesso!');
     $json = json_encode($retorno, JSON_UNESCAPED_UNICODE); 
     echo $json;
 

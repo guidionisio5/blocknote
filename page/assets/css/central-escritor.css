@@ -89,6 +89,12 @@ h5{
     color: #818181;
 }
 
+a{
+    text-decoration: none;
+    color: rgba(204, 204, 204, 0.253);
+    font-size: 20px;
+}
+
 .item-categoria:hover{
     transform: scale(1.01);
     cursor: pointer;
