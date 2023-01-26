@@ -54,7 +54,7 @@ const listarLemretes = () => {
                     <h3 class="desc">${lembrete.titulo}</h3>
                     <h5 class="desc">${lembrete.data_lembrete}</h5>
                     <p class="desc">${lembrete.tempo}</p>
-                    <p><button type="button" class="btn btn-salvar">Deletar Lembrete</button></p>
+                    <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
                 </div>
             </div>
               `)
