@@ -5,7 +5,7 @@ try{
 
 $id = $_POST['id'];
 
-$sql = "DELETE FROM tb_categorias WHERE id = $id";
+$sql = "DELETE FROM tb_lembretes WHERE id = $id";
 
 $comando = $con->prepare($sql);
 
@@ -15,7 +15,7 @@ $comando->execute();
 
 $retorno = array(
     'retorno'=>'ok',
-    'Mensagem'=>'Categoria deletada com sucesso!!!'
+    'Mensagem'=>'Lembrete deletado com sucesso!!!'
 );
 $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
 echo $json;

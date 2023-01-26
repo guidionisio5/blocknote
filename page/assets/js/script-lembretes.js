@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   // executa a função lista categorias
-  listarLemretes()
+  listarLembretes()
 
 });
 
@@ -41,7 +41,7 @@ const novoLembrete = () =>{
   
 }
 
-const listarLemretes = () => {
+const listarLembretes = () => {
   const result = fetch('../backend/_listar_lembrete.php')
       .then((response) => response.json())
       .then((result) => {
@@ -54,7 +54,7 @@ const listarLemretes = () => {
                     <h3 class="desc">${lembrete.titulo}</h3>
                     <h5 class="desc">${lembrete.data_lembrete}</h5>
                     <p class="desc">${lembrete.tempo}</p>
-                    <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
+                    <p><button type="button" class="btn btn-deletar" onclick="confirmaDeletarLembrete(${lembrete.id})">Deletar Lembrete</button></p>
                 </div>
             </div>
               `)
@@ -70,5 +70,52 @@ const listarLemretes = () => {
             </div>
           `)
       })
+}
+
+const confirmaDeletarLembrete = (id) =>{
+  Swal.fire({
+    title: `Deseja mesmo deletar esta categoria?`,
+    text: "Você não será capaz de reverter isso!",
+    icon: 'Carregando',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Sim, deletar!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      deletarLembrete(id)
+    }
+})
+}
+
+const deletarLembrete = (id) => {
+
+const result = fetch(`../backend/_deletar_lembrete.php`, {
+  method: 'POST',
+  body: `id=${id}`,
+  headers: {
+      'Content-type': 'application/x-www-form-urlencoded'
+  } 
+
+})
+  .then((response) => response.json())
+  .then((result) => {
+
+  
+    Swal.fire({
+        icon: result.retorno == 'ok' ? 'success' : 'error',
+        title: 'ATENÇÃO!',
+        text: result.Mensagem,
+        showConfirmButton: false,
+        timer: 1500
+    
+    })
+
+    listarLembretes()
+
+})
+
+
+
 }
   
