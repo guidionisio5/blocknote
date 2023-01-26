@@ -18,13 +18,12 @@
 </head>
 
 <body>
-     <?php 
-        include '../include/header.php';
-     ?> 
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-10">
+    <?php 
+    include '../include/header.php';
+    ?> 
+        
+        <div class="grid">
+            
                 <form action="" class="form-grid" id="form-profile" method="POST" enctype="multipart/form-data">
                     <div class="row">
                         <h3>Informações do usuário</h3>
@@ -41,49 +40,24 @@
                     
                 </form>
                 
-            </div>  
         
 
-            <div class="col-lg-2 profile-img">
-                <div class="img-grid" >
+            <div class="profile-img">
+                <div class="img-grid">
                     <div class="">
                         <h5 class="h5">Gestão de Usuário</h5>
                     </div>
                     <div id="img-profile">
                         
                     </div>
-                    
-
-                    <div class="">
-
-                    </div>
-
-                    <div class="">
-                        
-                    </div>
-
-                    <div class="">
-                        
-                    </div>
-
-                    <div class="">
-                        
-                    </div>
-
-                    <div class="">
-                        
-                    </div>
                     <br>
-
+                    
+                
                     <div class="btn-div">
                         <button class="btn-profile" type="button" onclick="updateProfile()">SALVAR MUDANÇAS</button>
                     </div>
-                        
-                    
-                    
-                </div>
-               
 
+                </div>
             </div>
         </div>
     

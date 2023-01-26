@@ -12,9 +12,11 @@ const listarCategorias = () => {
           $("#bloco-categoria").html('')
             result.map(categoria => {
                $('#bloco-categoria').append(`
-                  <a href="#" class="blocos">
-                  ${categoria.categorias}
-                  <p><button type="submit" class="btn btn-deletar" data-bs-target="#modalDeletar" onclick="confirmaDeletarCategoria(${categoria.id})" data-bs-toggle="modal">Deletar Categorias</button></p>
+                  <a href="#" class="blocos">${categoria.categorias}
+                    <p>
+                      <button type="submit" class="btn btn-deletar" data-bs-target="#modalDeletar" onclick="confirmaDeletarCategoria(${categoria.id})" data-bs-toggle="modal"><i class="bi bi-trash-fill"></i></button>
+                      <button type="submit" class="btn btn-deletar" data-bs-target="#modalEditar" onclick="abreModalEditar(${categoria.id})" data-bs-toggle="modal"><i class="bi bi-pencil-square"></i></button>
+                    </p>
                   </a>
                `)
             })
@@ -26,9 +28,6 @@ const listarCategorias = () => {
                   </button>
               </div>
             `)
-
-           
-
             
         })
       
@@ -79,4 +78,11 @@ const listarCategorias = () => {
 
     
     
+  }
+
+  const abreModalEditar = () => {
+  
+    var myModal = new bootstrap.Modal(document.getElementById('editarModal'))
+    myModal.show()
+  
   }

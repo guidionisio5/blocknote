@@ -67,10 +67,10 @@ const listarProfile = () => {
                 `)
 
                 $("#img-profile").append(`
-                    <div class="">
+                    <div class="grid-img">
                         <img alt="avatar" class="img-user" src="${usuario.imagem == null ? 'assets/img/user.png' : `assets/img/avatar/${usuario.imagem}`}">
                     </div>
-
+                    <br>
                     <div class="img-text">
                         <h3>${usuario.nome}</h3>
                         <h5>${usuario.localizacao == null ? '' : `${usuario.localizacao}`}</h5>
