@@ -23,41 +23,46 @@
                 <div class="titulo">
                     <h5>Seus lembretes</h5>
                 </div>
-
-                <div class="linha">
-                    <a href="" class="blocos">
-                        <li class="bolinha"></li>
-                        <h3 class="desc">Churrasco</h3>
-                        <h5 class="desc">13/12/2022</h5>
-                        <p class="desc">19:30</p>
-                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
-                    </a>
-
-                    <a href="" class="blocos">
-                        <li class="bolinha"></li>
-                        <h3 class="desc">Churrasco</h3>
-                        <h5 class="desc">13/12/2022</h5>
-                        <p class="desc">19:30</p>
-                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
-                    </a>
-
-                    <a href="" class="blocos">
-                        <li class="bolinha"></li>
-                        <h3 class="desc">Churrasco</h3>
-                        <h5 class="desc">13/12/2022</h5>
-                        <p class="desc">19:30</p>
-                        <p><button type="button" class="btn btn-deletar">Deletar Lembrete</button></p>
-                    </a>
-                    <div class="blocos">
-                        <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <p class="mais">+</p>
-                        </button>
-                    </div>
+                <div class="linha" id="bloco-lembrete">
+                 
                 </div>
             </div>
 
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Lembrete!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-lembrete">
+                    <div class="mb-3">
+                        <label for="titulo" class="col-form-label">Título:</label>
+                        <input type="text" class="form-control" name="titulo" id="titulo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="data-lembrete" class="col-form-label">Data:</label>
+                        <input type="date" class="form-control" name="data-lembrete" id="data-lembrete">
+                    </div>
+                
+                    </div>
+                    <div class="mb-3">
+                        <label for="horario" class="col-form-label">Horário:</label>
+                        <input type="time" class="form-control" name="horario" id="horario">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="novoLembrete()">Salvar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim do modal -->
 
     <!-- Importação do JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
@@ -71,6 +76,7 @@
     <!-- Importação JS da página -->
     <script src="assets/js/script-logout.js"></script>
     <script src="assets/js/script-img-central.js"></script>
+    <script src="assets/js/script-lembretes.js"></script>
 </body>
 </body>
 
