@@ -26,7 +26,7 @@ session_start();
 
 
 
-  <div class="container-login">
+  <div class="container-login-meu">
     <div class="texto">
       <p>
         Simplicidade e <br>
@@ -36,46 +36,46 @@ session_start();
     </div>
     <div class="login">
 
-      <nav class="navbar navbar-100 navbar-expand-lg">
-        <div class="container-fluid navbar-100">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse separa ul-meu" id="navbarTogglerDemo01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-ul">
-            <li class="nav-item">
-                <a class="nav-link  a-navbar avbar-100" href="duvidas.html"><img class="logo" src="assets/img/logo.png" alt=""></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  a-navbar avbar-100" href="sobre.html">Sobre Nós</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  a-navbar avbar-100" href="duvidas.html">Duvidas</a>
-              </li>
-            </ul>
-
+      <div >
+        <nav class="navbar navbar-expand-lg d-flex">
+          <div class="container-fluid navbar-100">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" separa ul-meu meu-navbar " id="navbarTogglerDemo01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-ul d-flex flex-row-reverse">
+                <li class="nav-item">
+                  <a class="nav-link  a-navbar avbar-100" href="sobre.html">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  a-navbar avbar-100" href="duvidas.html">Duvidas</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
+
 
       <form id="loginUser" class="form">
-            <p class="p">Bem-vindo(a) de Volta!</p>
-            <?php
-                if(isset($_SESSION['error'])) {?>
-                    <div class="mensagem-error" role="alert"><?php echo $_SESSION['error'] ?></div>
-            <?php unset($_SESSION['error']); }	?>
-            <div class="item">
-                <label for="email" class="label">E-mail</label>
-                <input type="email" name="email" id="email" class="input">
-            </div>
-            <div class="item">
-                <label for="senha" class="label">Senha</label>
-                <input type="password" name="senha" id="senha" class="input">
-            </div>
-                <button type="button" onclick="loginUser()" class="cadastrar">ENTRAR</button>
-            <div class="a">
-                <a href="cadastrarUser.html" class="a">Ainda não tem uma conta? Cadastre-se ja!</a>
-            </div>
+        <p class="p">Bem-vindo(a) de Volta!</p>
+        <?php
+        if (isset($_SESSION['error'])) { ?>
+          <div class="mensagem-error" role="alert"><?php echo $_SESSION['error'] ?></div>
+        <?php unset($_SESSION['error']);
+        }  ?>
+        <div class="item">
+          <label for="email" class="label">E-mail</label>
+          <input type="email" name="email" id="email" class="input">
+        </div>
+        <div class="item">
+          <label for="senha" class="label">Senha</label>
+          <input type="password" name="senha" id="senha" class="input">
+        </div>
+        <button type="button" onclick="loginUser()" class="cadastrar">ENTRAR</button>
+        <div class="a">
+          <a href="cadastrarUser.html" class="a">Ainda não tem uma conta? Cadastre-se ja!</a>
+        </div>
       </form>
 
     </div>

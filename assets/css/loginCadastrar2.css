@@ -13,10 +13,11 @@ body{
     overflow: hidden;
 }
 
-.container-login{
+.container-login-meu{
     display: grid;
-    grid-template-columns: 55vw 25vw;
+    grid-template-columns: 55vw 45vw;
     height: 100vh;
+    width: 100vw;
     background-image: url('../img/img-login.png');
     background-size: 100vh;
     background-repeat: no-repeat;
@@ -28,12 +29,21 @@ body{
     height: 100vh;
     width: 40vw;
     display: grid;
-    grid-template-rows: 30vh 70vh;
+    grid-template-rows: 5vh 100vh;
     justify-content: center;
+    align-items: center;
 }
 
 .navbar{
     background-color: transparent;
+    display: grid;
+    width: 100%;
+}
+
+.meu-navbar{
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 /* .navbar-100{
@@ -45,6 +55,7 @@ body{
     display: grid;
     align-items: center;
     
+
 }
 
 .texto{
@@ -63,7 +74,7 @@ body{
     grid-template-rows: 2fr;
     gap: 15px;
     justify-items: center;
-    margin-bottom: 40vh;
+   
 }
 
 .cadastroUser-inputs{
@@ -119,7 +130,7 @@ body{
 }
 
 .a{
-    color: rgb(114, 114, 114);
+    color: white;
     text-decoration: none;
     justify-self: center;
     font-size: 18px;
@@ -133,8 +144,10 @@ body{
 .p{
     color: white;
     font-size: 60px;
+    text-align: center;
 }
 
 .logo{
     width: 100px;
 }
+
