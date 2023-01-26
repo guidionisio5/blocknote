@@ -14,11 +14,11 @@ try{
     // validaCampoVazio($anotacoes,'anotacoes');
     // validaCampoVazio($categoria,'categoria');
 
-    $sql = "INSERT INTO tb_anotacoes(`anotacoes`, `descricao`, `id_categorias`) VALUES('$anotacoes', '$descricao', '$categoria')";
+    $sql = "INSERT INTO tb_anotacoes( `anotacao`, `descricao`) VALUES('$anotacoes', '$descricao')";
     $comando = $con->prepare($sql);
     $comando->execute();
 
-    $retorno = array('retorno'=>'ok','mensagem'=>'Anotações salva com sucesso!');
+    $retorno = array('retorno'=>'ok','mensagem'=>'Anotação salva com sucesso!');
     $json = json_encode($retorno, JSON_UNESCAPED_UNICODE); 
     echo $json;
 
