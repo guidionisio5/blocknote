@@ -20,17 +20,11 @@
         </div>   
     </header>
 
-    <!-- <div class="img-fundo">
-        
-        <img src="page/assets/img/fundo.png" alt="">
-    
-    </div> -->
-
     <div class="container-loader">
        
-    <h3>Aguarde enquanto<br>
-    preparamos o melhor<br>
-    para você <span id="ponto"></span></h3>
+        <h3>Aguarde enquanto<br>
+        preparamos o melhor<br>
+        para você <span id="ponto"></span></h3>
 
     </div>
     <!-- Importação do JQuery -->
