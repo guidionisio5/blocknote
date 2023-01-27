@@ -19,7 +19,7 @@
         <div class="container">
             <div>
                 <div>
-                    <h5>Anotações Recentes</h5>
+                    <h5>Anotações</h5>
                 </div>
 
                 <div class="linha">
@@ -36,7 +36,7 @@
 
             <div>
                 <div>
-                    <h5>Favoritos</h5>
+                    <h5>Lembretes</h5>
                 </div>
                 
                 <div class="linha">
