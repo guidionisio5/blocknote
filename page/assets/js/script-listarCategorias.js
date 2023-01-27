@@ -109,3 +109,33 @@ const listarCategorias = () => {
     myModal.show()
   
   }
+
+  const editarCategoria = (id) => {
+    let categoria = new FormData($('#form-editar')[0]);
+
+    const result = fetch(`../backend/_editar_categorias.php`, {
+      method: 'POST',
+      body: `id=${id,categorias}`,
+      headers: {
+          'Content-type': 'application/x-www-form-urlencoded'
+      } 
+    
+    })
+      .then((response) => response.json())
+      .then((result) => {
+
+      
+        Swal.fire({
+            icon: result.retorno == 'ok' ? 'success' : 'error',
+            title: 'ATENÇÃO!',
+            text: result.Mensagem,
+            showConfirmButton: false,
+            timer: 1500
+        
+        })
+  
+        listarCategorias()
+
+    })
+
+  }
