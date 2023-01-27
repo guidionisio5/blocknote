@@ -168,14 +168,12 @@ const editarLembrete = (id) => {
 
   
   let dados = new FormData($('#form-editar-lembrete')[0]);
+  dados.append('id', id);
   
   
 const result = fetch(`../backend/_editar_lembrete.php`, {
   method: 'POST',
-  body: `id=${id}`,
-  headers: {
-      'Content-type': 'application/x-www-form-urlencoded'
-  } 
+  body: dados
 
 })
   .then((response) => response.json())
