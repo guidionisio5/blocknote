@@ -144,7 +144,7 @@ const abreModalEditarLembrete = (id,titulo,data_lembrete,tempo) => {
                     </div>
                     <div class="mb-3">
                         <label for="data-lembrete" class="col-form-label texto-menu">Data:</label>
-                        <input type="text" class="form-control input-cor texto-menu" name="data-lembrete" id="data-lembrete" value="${data_lembrete}">
+                        <input type="text" class="form-control input-cor texto-menu" name="data-lembrete-modal" id="data-lembrete-modal" value="${data_lembrete}">
                     </div>
                     <div class="mb-3">
                         <label for="tempo" class="col-form-label texto-menu">Horário:</label>
@@ -159,9 +159,13 @@ const abreModalEditarLembrete = (id,titulo,data_lembrete,tempo) => {
         </div>
     </div>`
   )
+
   var myModal = new bootstrap.Modal(document.getElementById('editarModal'))
   myModal.show()
 
+  $('#data-lembrete-modal').inputmask('99/99/9999')
+  $('#tempo').inputmask('99:99')
+  
 }
 
 const editarLembrete = (id) => {
@@ -180,14 +184,26 @@ const result = fetch(`../backend/_editar_lembrete.php`, {
   .then((result) => {
 
   
-    Swal.fire({
-        icon: result.retorno == 'ok' ? 'sucess' : 'error',
-        title: 'ATENÇÃO!',
-        text: result.Mensagem,
-        showConfirmButton: false,
-        timer: 1500
-    
+    if(result.retorno == 'erro'){
+      Swal.fire({
+      icon: result.retorno == 'erro' ? 'error' : 'success',
+      title: 'Atenção',
+      text: result.mensagem,
+      showConfiirmButton: false
     })
+    }else{
+      Swal.fire({
+        title: 'Sucesso!',
+        text: result.mensagem,
+        icon: 'success',
+        confirmButtonColor: '#078BB7',
+        confirmButtonText: 'OK!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.replace("http://localhost/blocknote/page/lembretes.php")
+        }
+      })
+    }
 
     listarLembretes()
 

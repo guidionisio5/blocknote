@@ -9,24 +9,19 @@
 
 
 
-body{
+body{    
     background-color: #212020;
     overflow: hidden;
-}
-
-.p{
-    color: white;
-    font-size: 60px;
-}
-.container{
-    display: grid;
-    justify-items: center;
-    align-items: center;
     height: 100vh;
     background-image: url('../img/fundo.png');
     background-repeat: no-repeat;
     background-size: 90vh;
     background-position: center;
+}
+
+.p{
+    color: white;
+    font-size: 60px;
 }
 
 
@@ -136,19 +131,12 @@ h3{
     color: white;
     font-size: 3em;
     font-weight: 400;
-    margin-left: 25vw;
-    margin-bottom: 45vh;
 }
 
 .container-loader{
     display: grid;
-    justify-items: left;
     align-items: center;
-    height: 100vh;
-    background-image: url('/assets/img/fundo.png');
-    background-repeat: no-repeat;
-    background-size: 90vh;
     background-position: center;
+    height: 60vh;
+    margin-left: 15vw;
 }
-
-

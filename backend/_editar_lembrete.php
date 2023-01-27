@@ -5,7 +5,7 @@ include 'include/conexao.php';
 try{
 
     $titulo = $_POST['titulo'];
-    $data_lembrete = $_POST['data-lembrete'];
+    $data_lembrete = $_POST['data-lembrete-modal'];
     $tempo = $_POST['tempo'];
     $id = $_POST['id'];
     

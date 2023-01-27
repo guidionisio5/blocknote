@@ -91,7 +91,7 @@ const listarCategorias = () => {
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  <form id="form-editar">
+                  <form id="form-editar-categorias">
                       <div class="mb-3">
                           <label for="categorias" class="col-form-label texto-menu">Nome da categoria:</label>
                           <input type="text" class="form-control input-cor texto-menu" name="categorias" id="categorias" value="${categorias}">
@@ -111,28 +111,39 @@ const listarCategorias = () => {
   }
 
   const editarCategoria = (id) => {
-    let categoria = new FormData($('#form-editar')[0]);
+    
+    let dados = new FormData($('#form-editar-categorias')[0]);
+    dados.append('id', id);
 
     const result = fetch(`../backend/_editar_categorias.php`, {
       method: 'POST',
-      body: `id=${id,categorias}`,
-      headers: {
-          'Content-type': 'application/x-www-form-urlencoded'
-      } 
+      body: dados
     
     })
       .then((response) => response.json())
       .then((result) => {
 
       
-        Swal.fire({
-            icon: result.retorno == 'ok' ? 'success' : 'error',
-            title: 'ATENÇÃO!',
-            text: result.Mensagem,
-            showConfirmButton: false,
-            timer: 1500
-        
+        if(result.retorno == 'erro'){
+          Swal.fire({
+          icon: result.retorno == 'erro' ? 'error' : 'success',
+          title: 'Atenção',
+          text: result.mensagem,
+          showConfiirmButton: false
         })
+        }else{
+          Swal.fire({
+            title: 'Sucesso!',
+            text: result.mensagem,
+            icon: 'success',
+            confirmButtonColor: '#078BB7',
+            confirmButtonText: 'OK!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.replace("http://localhost/blocknote/page/categorias.php")
+            }
+          })
+        }
   
         listarCategorias()
 
