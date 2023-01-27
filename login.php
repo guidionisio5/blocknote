@@ -22,7 +22,6 @@ session_start();
 
 <body>
 
-<<<<<<< Updated upstream
 
 
 
@@ -55,47 +54,6 @@ session_start();
                   <a class="nav-link  a-navbar avbar-100" href="duvidas.html">Duvidas</a>
                 </li>
               </ul>
-=======
-    <header>
-        <div class="navbar">
-            <img src="page/assets/img/logo2.png" alt="">
-            <ul>
-                <a href="" class="a-li">
-                    <li> Entre em Contato</li>
-                </a>
-                <a href="" class="a-li">
-                    <li> Dúvidas </li>
-                </a>
-            </ul>
-
-        </div>   
-    </header>
-
-    <!-- <div class="img-fundo">
-        
-        <img src="page/assets/img/fundo.png" alt="">
-    
-    </div> -->
-
-    <div class="container">
-        <form id="loginUser" class="form">
-            <p class="p">Bem-vindo(a) de Volta!</p>
-            <?php
-                if(isset($_SESSION['error'])) {?>
-                    <div class="mensagem-error" role="alert"><?php echo $_SESSION['error'] ?></div>
-            <?php unset($_SESSION['error']); }	?>
-            <div class="item">
-                <label for="usuario" class="label">E-mail</label>
-                <input type="text" name="usuario" id="usuario" class="input">
-            </div>
-            <div class="item">
-                <label for="senha" class="label">Senha</label>
-                <input type="password" name="senha" id="senha" class="input">
-            </div>
-                <button type="button" onclick="loginUser()" class="cadastrar">ENTRAR</button>
-            <div class="a">
-                <a href="cadastrarUser.html" class="a">Ainda não tem uma conta? Cadastre-se ja!</a>
->>>>>>> Stashed changes
             </div>
           </div>
         </nav>
