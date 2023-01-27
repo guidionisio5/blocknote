@@ -46,11 +46,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="data-lembrete" class="col-form-label texto-menu">Data:</label>
-                        <input type="date" class="form-control input-cor" name="data-lembrete" id="data-lembrete">
+                        <input type="text" class="form-control input-cor" name="data-lembrete" id="data-lembrete">
                     </div>
                     <div class="mb-3">
                         <label for="horario" class="col-form-label texto-menu">Horário:</label>
-                        <input type="time" class="form-control input-cor" name="horario" id="horario">
+                        <input type="text" class="form-control input-cor" name="horario" id="horario">
                     </div>
                 </form>
             </div>
@@ -80,6 +80,11 @@
     -logout.js"></script>
     <script src="assets/js/script-img-central.js"></script>
     <script src="assets/js/script-lembretes.js"></script>
+
+     <!-- importação inputmask -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"
+        integrity="sha512-jTgBq4+dMYh73dquskmUFEgMY5mptcbqSw2rmhOZZSJjZbD2wMt0H5nhqWtleVkyBEjmzid5nyERPSNBafG4GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </body>
 

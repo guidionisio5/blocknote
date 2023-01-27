@@ -7,7 +7,7 @@ try{
 
     $titulo = $_POST['titulo'];
     $data_lembrete = $_POST['data-lembrete'];
-    $tempo = $_POST['horario'];
+    $tempo = $_POST['horario']; 
 
     validaCampoVazio($titulo,'titulo');
     validaCampoVazio($data_lembrete,'data-lembrete');

@@ -2,14 +2,18 @@ $(document).ready(function () {
 
     // executa a função lista categorias
     listarProfile()
+
+    //   utilização da biblioteca input mask para criar mascara de telefone
+    // deixa o negocio mais bonitinho
   
 });
 
 const listarProfile = () => {
+    
     const result = fetch('../backend/_dados_profile.php')
         .then((response) => response.json())
         .then((result) => {
-          $("#profile").html('')
+            $("#profile").html('')
             result.map(usuario => {
                $('#profile').append(`
                     <div class="">
@@ -76,6 +80,9 @@ const listarProfile = () => {
                         <h5>${usuario.localizacao == null ? '' : `${usuario.localizacao}`}</h5>
                     </div>
                 `)
+
+                      
+                $('#tel').inputmask('(99) 99999-9999')
             })
 
             
