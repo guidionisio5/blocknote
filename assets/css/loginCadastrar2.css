@@ -27,36 +27,21 @@ body{
 
 .login{
     height: 100vh;
-    width: 40vw;
     display: grid;
     grid-template-rows: 5vh 100vh;
-    justify-content: center;
     align-items: center;
 }
 
 .navbar{
     background-color: transparent;
-    display: grid;
-    width: 100%;
 }
 
-.meu-navbar{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
+
 
 /* .navbar-100{
     width: 100vw;
 } */
 
-
-.navbar-ul{
-    display: grid;
-    align-items: center;
-    
-
-}
 
 .texto{
     display: grid;
@@ -108,7 +93,10 @@ body{
     padding: 10px;
 }
 
-
+ul{
+    display: grid;
+    align-items: center;
+}
 
 .cadastrar{
     display: grid;
@@ -130,10 +118,13 @@ body{
 }
 
 .a{
-    color: white;
+    color: #818181;
     text-decoration: none;
     justify-self: center;
     font-size: 18px;
+    padding: 10px;
+    
+
 }
 
 .a:hover{
@@ -151,3 +142,39 @@ body{
     width: 100px;
 }
 
+/* cadastrar*/
+
+.container-cadastrar-meu{
+
+        display: grid;
+        grid-template-columns: 55vw 45vw;
+        height: 100vh;
+        width: 100vw;
+        background-image: url('../img/img-cadastro.png');
+        background-size: 100vh;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: #262424;
+        
+
+}
+
+.navbar-texto {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+}
+
+.navbar-cadastrar, .navbar{
+    display: grid;
+    justify-content: left;
+} 
+
+.navbar-meu-c, .navbar{
+    display: grid;
+    justify-content: left !important;
+}
+
+.form-cadastrar{
+    display: grid;
+    align-items: center;
+}
