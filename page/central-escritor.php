@@ -20,13 +20,9 @@
 
         <div class="escrita">
             <h5>Central do Escritor</h5>
-            <textarea id="myTextarea" name="anotacoes" class="bloco-escrever img-fundo" onkeydown="tirarImg()" onchange="voltaImg()">
-
-            </textarea>
+                <textarea id="anotacoes" name="anotacoes" class="bloco-escrever img-fundo" onkeydown="tirarImg()" onchange="voltaImg()"></textarea>
             <h5>Descrição</h5>
-            <textarea class="bloco-descricao img-descricao" name="descricao" id="myTextarea" onkeydown="tirarTxt()" onchange="voltaTxt()">
-            
-            </textarea>
+                <textarea class="bloco-descricao img-descricao" name="descricao" id="descricao" onkeydown="tirarTxt()" onchange="voltaTxt()"></textarea>
             <div class="mt-3 mb-3">
                 <button type="button" class="btn-salvar" onclick="abreModalSalvar()"">Salvar</button>
             </div>
@@ -81,12 +77,12 @@
                     <form id="form-anotacoes" method="POST">
                         <div class="mb-3">
                             <label for="titulo" class="col-form-label texto-menu">Título:</label>
-                            <input type="text" class="form-control input-cor" name="titulo" id="titulo">
+                            <input type="text" class="form-control input-cor texto-menu" name="titulo" id="titulo">
                         </div>
                         <div class="mb-3">
                             <label for="categorias" class="col-form-label texto-menu">Categoria:</label>
                             <select class="form-select input-cor texto-menu" aria-label="Default select example" id="option-categoria">
-                                <option class="option-cor" selected disabled>Escolha uma categoria</option>
+                                
                                 
                             </select>
                         </div>
@@ -112,9 +108,9 @@
     
     <script>
 
-    $( document).ready(function() {
-        tinymce.init({
-                selector: '#myTextarea', 
+    $(document).ready(function() {
+            tinymce.init({
+                selector: '#anotacoes', 
                 height: 400,
                 width: 800,
                 toolbar: 'undo redo | bold italic underline strikethrough | fontfamily fontsize blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
@@ -123,10 +119,12 @@
             });
 
             tinymce.init({
-                selector: '.bloco-descricao', 
-                height: 150,
+                selector: '#descricao', 
+                height: 400,
                 width: 800,
-                
+                toolbar: 'undo redo | bold italic underline strikethrough | fontfamily fontsize blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
+                plugins: 'preview importcss searchreplace autolink autosave save direcionality code visualblocks visualchars fullscreen image link media template codesample table charmap pagebreak nonbreaking âncora insertdatetime advlist lists wordcount help charmap quickbars emoticons',
+                language: 'portuguese'
             });
     });
        

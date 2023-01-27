@@ -25,14 +25,12 @@
         <div class="grid">
             
                 <form action="" class="form-grid" id="form-profile" method="POST" enctype="multipart/form-data">
-                    <div class="row">
+                    <div class="">
                         <h3>Informações do usuário</h3>
                     </div>
-                    <div class="row grid-center" id="profile">
+                    <div class="grid-center" id="profile">
                         
                     </div>
-                   
-
                     
                     <div id="descricao">
                         
@@ -44,6 +42,9 @@
 
             <div class="profile-img">
                 <div class="img-grid">
+                    <div>
+                        
+                    </div>
                     <div class="">
                         <h5 class="h5">Gestão de Usuário</h5>
                     </div>
@@ -51,7 +52,7 @@
                         
                     </div>
                     <br>
-                    
+                
                 
                     <div class="btn-div">
                         <button class="btn-profile" type="button" onclick="updateProfile()">SALVAR MUDANÇAS</button>

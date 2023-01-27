@@ -28,6 +28,11 @@ const listarCategorias = () => {
               </div>
             `)
 
+            $("#option-categoria").append(`
+              <option class="option-cor" value="0" selected>Escolha uma categoria</option>
+            `)
+           
+
             result.map(categoria => {
               $('#option-categoria').append(`
                   <option class="option-cor texto-menu" value="${categoria.id}" class="">${categoria.categorias}</option>

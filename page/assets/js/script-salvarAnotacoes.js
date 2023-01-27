@@ -1,14 +1,17 @@
 const salvarAnotacoes = () =>{
-    
-  // captura todo formulário e cria um formData
-  let notas = new FormData($('#salvarAnotacoes')[0]);
-  
-  let dados = new FormData($('#form-anotacoes')[0]);
+
+  let titulo = $('#titulo').val();
+  let categorias = $('#option-categoria').val();
+  let anotacoes = tinyMCE.get('#anotacoes').getContent()
+  var descricao = tinymce.get('descricao').getContent({format: 'text'});
 
   // envio e recebimento das notas
   const result = fetch('../backend/_salvar_anotacoes.php', {
     method: 'POST',
-    body: notas,dados
+    body: `titulo=${titulo}&castegorias=${categorias}&anotacoes=${anotacoes}&descricao=${descricao}`,
+    headers: {
+      'Content-type': 'application/x-www-form-urlencoded'
+    }
   })
     .then((response => response.json()))
     .then((result) => {
