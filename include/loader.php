@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aguarde</title>
     <link rel="stylesheet" href="../page/assets/css/loader.css">
-    <link rel="stylesheet" href="../assets/css/loginCadastrar.css">
 </head>
 <body>
 
@@ -19,12 +18,14 @@
 
         </div>   
     </header>
-
-    <div class="container-loader">
-       
-        <h3>Aguarde enquanto<br>
-        preparamos o melhor<br>
-        para você <span id="ponto"></span></h3>
+    
+    <div class="container-loader"> 
+        <div class="loader">
+            <h3>Aguarde enquanto<br>
+            preparamos o melhor<br>
+            para você <span id="ponto"></span>
+            </h3>
+        </div>
 
     </div>
     <!-- Importação do JQuery -->
