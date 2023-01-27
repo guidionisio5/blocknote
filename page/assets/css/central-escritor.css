@@ -9,9 +9,8 @@
 }
 
 body{
-    height: 100vh;
+    height: auto;
     background-color: #292929;
-    overflow: hidden;
 }
 
 
@@ -21,11 +20,11 @@ body{
     margin-top: 4vh;
     margin-left: 40px;
     height: 100vh;
-    overflow: hidden;
+    padding: 0px 0px 0px 0px;
 }
 
 .bloco-escrever{
-    height: 400px;
+    height: 300px;
     width: 800px;
     border: 1px solid rgba(204, 204, 204, 0.253);
     background-color: #2C2C2C;
@@ -45,14 +44,14 @@ body{
 }
 
 .bloco-descricao{
-    height: 100px;
+    height: 300px;
     width: 800px;
     border: 1px solid rgba(204, 204, 204, 0.253);
-    resize: none;
-    outline: none;
-    color: white;
     background-color: #2C2C2C;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* resize: none; */
+    /* outline: none; */
+    /* color: white; */
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */ 
 }
 
 .img-descricao{
@@ -69,7 +68,7 @@ h5{
 
 }
 
-.bloco-categoria{
+#bloco-categoria{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
@@ -90,6 +89,12 @@ h5{
     color: #818181;
 }
 
+a{
+    text-decoration: none;
+    color: rgba(204, 204, 204, 0.253);
+    font-size: 20px;
+}
+
 .item-categoria:hover{
     transform: scale(1.01);
     cursor: pointer;
@@ -108,9 +113,23 @@ h5{
 
 .btn-salvar{
     margin-top: 10px;
-    padding: 7px;
+    padding: 7px 15px;
     background-color: #2C2C2C;
     border: 1px solid rgba(204, 204, 204, 0.253);
     color: #818181;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#modal-cor{
+    background-color: #292929;
+}
+
+
+.input-cor{
+    background-color: #82818120;
+}
+
+.option-cor{
+    background-color: #060606c9;
+    color: white;
 }

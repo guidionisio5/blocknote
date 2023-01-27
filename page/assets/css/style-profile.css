@@ -9,16 +9,19 @@
 
 body{
     background-color: #292929;
-    overflow: hidden;
     color: white;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
 }
 
 .form-grid{
     display: grid;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     padding: 50px;
-    gap: 65px 0px;
 }
 
 .grid-center{
@@ -77,13 +80,12 @@ input[type="file"] {
 .img-grid{
     display: grid;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .profile-img{
     background-color: #191919;
     padding: 20px;
-    
 }
 
 .h5{
@@ -95,13 +97,16 @@ input[type="file"] {
 .img-text{
     text-align: center;
     color:  rgb(114, 114, 114);
-    margin-left: 1rem;
+}
+
+.grid-img{
+    display: grid;
+    justify-items: center;
 }
 
 .img-user{
     width: 153px;
     height: 153px;
-    margin-left: 2rem;
 }
 
 .btn-profile{
@@ -110,7 +115,6 @@ input[type="file"] {
     border: solid rgba(255, 255, 255, 0.212) 1px;
     box-shadow:0px 4px 4px 0px rgba(24, 24, 24, 0.6);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    align-items: center;
     font-size: medium;
     padding: 4px 12px;
     
@@ -118,8 +122,6 @@ input[type="file"] {
 
 .btn-div{
     text-align: center;
-    margin-left: 1rem;
-    padding-bottom: 1rem;
 }
 
 textarea{
