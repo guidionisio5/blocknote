@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+}
+
+
+
+body{
+    overflow: hidden;
+}
+
+.container-login-meu{
+    display: grid;
+    grid-template-columns: 55vw 45vw;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/img-login.png');
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-color: #262424;
+    
+}
+
+.login{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 5vh 100vh;
+    align-items: center;
+}
+
+.navbar{
+    background-color: transparent;
+}
+
+
+
+/* .navbar-100{
+    width: 100vw;
+} */
+
+
+.texto{
+    display: grid;
+    align-items: center;
+    text-align: left;
+    font-size: 2.4em;
+    color: white;
+    margin-left: 5vw;
+    margin-top: -15vh;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 15px;
+    justify-items: center;
+   
+}
+
+.cadastroUser-inputs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px 20px;
+}
+
+.itemCadastro{
+    display: grid;
+}
+.item{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.label{
+    color: white;
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+.input{
+    background-color: #292929;
+    border: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    font-weight: bold;
+    color: whitesmoke;
+    width: 400px;
+    height: 35px;
+    padding: 10px;
+}
+
+ul{
+    display: grid;
+    align-items: center;
+}
+
+.cadastrar{
+    display: grid;
+    padding: 10px 30px;
+    background-color: #078BB7;
+    text-align: center;
+    color: white;
+    margin: 15px 0px;
+    border: none;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.cadastrar:hover{
+    background-color: #056e91;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.a{
+    color: #818181;
+    text-decoration: none;
+    justify-self: center;
+    font-size: 18px;
+    padding: 10px;
+    
+
+}
+
+.a:hover{
+    color: rgba(255, 255, 255, 0.473);
+}
+
+
+.p{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+/* cadastrar*/
+
+.container-cadastrar-meu{
+
+        display: grid;
+        grid-template-columns: 55vw 45vw;
+        height: 100vh;
+        width: 100vw;
+        background-image: url('../img/img-cadastro.png');
+        background-size: 100vh;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: #262424;
+        
+
+}
+
+.navbar-texto {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+}
+
+.navbar-cadastrar, .navbar{
+    display: grid;
+    justify-content: left;
+} 
+
+.navbar-meu-c, .navbar{
+    display: grid;
+    justify-content: left !important;
+}
+
+.form-cadastrar{
+    display: grid;
+    align-items: center;
+}

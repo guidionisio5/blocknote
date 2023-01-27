@@ -26,14 +26,14 @@ body{
     list-style: none;
     padding-left: 20px;
 }
-.navbar ul a{
+.a-navbar{
     text-decoration: none;
-}
-
-.navbar ul a li{
     color: white;
     padding: 15px;
+    font-size: 1.1em;
 }
+
+
 
 .navbar .logo{
     display: grid;
@@ -190,3 +190,26 @@ h1{
     --animate-duration: 1.4s;
   }
   
+  /* responsivo */
+
+ 
+
+  @media only screen and (max-width: 768px) {
+    h1{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .bloco1{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+    }
+    
+    .img-bloco{
+        height: 200px;
+        width: 240px;
+        background-color: #181818;
+        
+    }
+  }
