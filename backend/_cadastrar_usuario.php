@@ -6,12 +6,12 @@ include 'include/function.php';
 
 try{
 
-    $nome = $_POST['nome'];
+    // $nome = $_POST['nome'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     $confirmar_senha = $_POST['confirmar_senha'];
 
-    validaCampoVazio($nome,'nome');
+    // validaCampoVazio($nome,'nome');
     validaCampoVazio($email,'email');
     validaCampoVazio($senha,'senha');
     validaCampoVazio($confirmar_senha,'confirmar_senha');
@@ -39,7 +39,7 @@ try{
 
     }else{
     
-        $sql = "INSERT INTO tb_cadastro(`nome`, `email`, `senha`) VALUES('$nome', '$email', sha1('$senha'))";
+        $sql = "INSERT INTO tb_cadastro(`email`, `senha`) VALUES('$email', sha1('$senha'))";
         $comando = $con->prepare($sql);
         $comando->execute();
 

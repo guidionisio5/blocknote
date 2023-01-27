@@ -1,6 +1,7 @@
 <?php 
 session_start();
 include 'include/conexao.php';
+
 try{
 
     $titulo = $_POST['titulo'];
@@ -8,7 +9,7 @@ try{
     $tempo = $_POST['tempo'];
     $id = $_POST['id'];
     
-    $sql = "UPDATE tb_cadastro SET `titulo` = '$titulo', `data_lembrete` = '$data_lembrete', `tempo` = '$tempo' WHERE id = '$id'";
+    $sql = "UPDATE tb_lembretes SET titulo = '$titulo', data_lembrete = '$data_lembrete', tempo = '$tempo' WHERE id = '$id'";
     $comando = $con->prepare($sql);
     $comando->execute();
 
