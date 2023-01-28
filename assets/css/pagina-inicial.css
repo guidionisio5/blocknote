@@ -70,7 +70,7 @@ h1{
 .img-bloco{
     height: 300px;
     width: 400px;
-    background-color: #181818;
+    background-image: url('../img/lembrete.png');
     
 }
 
@@ -128,7 +128,7 @@ h1{
 .img-bloco2{
     height: 300px;
     width: 400px;
-    background-color: #262424;
+    background-image: url('../img/anotacoes.png');
 }
 /* 
 .img-enfeite2{
@@ -177,6 +177,11 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.img-bloco3{
+    height: 300px;
+    width: 400px;
+    background-image: url('../img/privacidade.png');
+}
 
 
 /* ANIMAÇÃO */

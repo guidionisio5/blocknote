@@ -16,6 +16,7 @@ const listarCategorias = () => {
                     <p>
                       <button type="submit" class="btn btn-deletar" data-bs-target="#modalDeletar" onclick="confirmaDeletarCategoria(${categoria.id})" data-bs-toggle="modal"><i class="bi bi-trash-fill"></i></button>
                       <button type="submit" class="btn btn-deletar" data-bs-target="#modalEditar" onclick="abreModalEditar(${categoria.id},'${categoria.categorias}')" data-bs-toggle="modal"><i class="bi bi-pencil-square"></i></button>
+                      <button type="submit" class="btn btn-deletar" onclick="abreModalAnotacoes()"><i class="bi bi-list-ul"></i></button>
                     </p>
                   </a>
                `)
@@ -148,5 +149,48 @@ const listarCategorias = () => {
         listarCategorias()
 
     })
+
+  }
+
+  const abreModalAnotacoes = () => {
+
+  $('#modal-listar-anotacoes').html(
+    `<div class="modal" id="modalListar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" id="modal-cor">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5 texto-menu" id="exampleModalLabel">Anotações da Catgoria: Escola</h1>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th scope="col">Titulo</th>
+                              <th scope="col">Data de Lançamento</th>
+                              <th> </th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td class="texto-menu">Matematica</td>
+                              <td class="texto-menu">Mark</td>
+                              <td>
+                              <button type="submit" class="btn btn-deletar" ><i class="bi bi-trash-fill"></i></button>
+                              <button type="submit" class="btn btn-deletar" ><i class="bi bi-pencil-square"></i></button>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" onclick="novaCategoria()">Salvar</button>
+              </div>
+          </div>
+      </div>
+    </div>`
+  )
+  var myModal = new bootstrap.Modal(document.getElementById('modalListar'))
+  myModal.show()
 
   }
