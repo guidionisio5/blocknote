@@ -44,7 +44,7 @@ const listarCategorias = () => {
 
 const abreModalSalvar = () => {
   
-  var myModal = new bootstrap.Modal(document.getElementById('deleteModal'))
+  var myModal = new bootstrap.Modal(document.getElementById('salvarModal'))
   myModal.show()
 
 }
