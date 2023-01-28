@@ -110,7 +110,9 @@
 
     $(document).ready(function() {
             tinymce.init({
-                selector: '#anotacoes', 
+                selector: '#anotacoes',
+                mode: "specific_textareas",
+                editor_selector: "mceEditor",
                 height: 400,
                 width: 800,
                 toolbar: 'undo redo | bold italic underline strikethrough | fontfamily fontsize blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
@@ -120,6 +122,8 @@
 
             tinymce.init({
                 selector: '#descricao', 
+                mode: "specific_textareas",
+                editor_selector: "mceEditor",
                 height: 400,
                 width: 800,
                 toolbar: 'undo redo | bold italic underline strikethrough | fontfamily fontsize blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
