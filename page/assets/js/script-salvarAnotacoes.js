@@ -31,7 +31,13 @@ const salvarAnotacoes = () =>{
           confirmButtonText: 'OK!'
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.replace("http://localhost/blocknote/page/central-escritor.php")
+            
+            tinymce.get('anotacoes').setContent('');
+            tinymce.get('descricao').setContent('');
+            $('#titulo').val('');
+            $('#option-categoria').val(0);
+            $('#salvarModal').modal('hide');
+            
           }
         })
     
