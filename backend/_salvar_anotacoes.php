@@ -10,8 +10,6 @@ try{
     $anotacoes = $_POST['anotacoes'];
     $descricao = $_POST['descricao'];
 
-    var_dump($anotacoes);
-
     validaCampoVazio($titulo,'titulo');
 
     if($anotacoes == ""){
