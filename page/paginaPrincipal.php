@@ -18,41 +18,83 @@
 
         <div class="container">
             <div>
-                <div>
-                    <h5>Anotações</h5>
+                <div class="titulo">
+                    <h5>Categorias</h5>
                 </div>
 
-                <div class="linha">
-                    <a href="" class="blocos">Capa de Proteção</a>
-                    <a href="" class="blocos">Capa de Proteção</a>
-                    <a href="central-escritor.php" class="blocos">
+                <div class="linha" id="bloco-categoria">
 
-                        <p class="adicionar mais">
-                            +
-                        </p>
-                    </a>
                 </div>
             </div>
 
             <div>
                 <div>
-                    <h5>Lembretes</h5>
+                    <h5 class="titulo">Lembretes</h5>
                 </div>
                 
-                <div class="linha">
-                    <a href="" class="blocos">Capa de Proteção</a>
-                    <a href="" class="blocos">Capa de Proteção</a>
-                    <a href="central-escritor.php" class="blocos">
-
-                        <p class="adicionar mais">
-                            +
-                        </p>
-                    </a>
+                <div class="linha" id="bloco-lembrete">
+                    
                 </div>
             </div>
 
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal" id="categoriaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="modal-cor">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 texto-menu" id="exampleModalLabel">Nova categoria!</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-categoria">
+                    <div class="mb-3">
+                        <label for="categorias" class="col-form-label texto-menu">Nome da categoria:</label>
+                        <input type="text" class="form-control input-cor" name="categorias" id="categorias">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="novaCategoria()">Salvar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim do modal -->
+
+    <!-- Modal -->
+    <div class="modal" id="lembreteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="modal-cor">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 texto-menu" id="exampleModalLabel">Novo Lembrete!</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-lembrete">
+                    <div class="mb-3">
+                        <label for="titulo" class="col-form-label texto-menu">Título:</label>
+                        <input type="text" class="form-control input-cor" name="titulo" id="titulo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="data-lembrete" class="col-form-label texto-menu">Data:</label>
+                        <input type="text" class="form-control input-cor" name="data-lembrete" id="data-lembrete">
+                    </div>
+                    <div class="mb-3">
+                        <label for="horario" class="col-form-label texto-menu">Horário:</label>
+                        <input type="text" class="form-control input-cor" name="horario" id="horario">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="novoLembrete()">Salvar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim do modal -->
 
     <!-- Importação do JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
@@ -62,11 +104,17 @@
  
     <!-- Importação JS - SweetAlert2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
- 
+
+    <!-- importação inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"
+        integrity="sha512-jTgBq4+dMYh73dquskmUFEgMY5mptcbqSw2rmhOZZSJjZbD2wMt0H5nhqWtleVkyBEjmzid5nyERPSNBafG4GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Importação JS da página -->
     <script src="assets/js/script-logout.js"></script>
     <script src="assets/js/script-img-central.js"></script>
+    <script src="assets/js/script-pagina-principal.js"></script>
 </body>
 </body>
 
-</html>
+</html>         

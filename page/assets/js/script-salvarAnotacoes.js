@@ -2,13 +2,13 @@ const salvarAnotacoes = () =>{
 
   let titulo = $('#titulo').val();
   let categorias = $('#option-categoria').val();
-  let anotacoes = tinyMCE.get('#anotacoes').getContent()
-  var descricao = tinymce.get('descricao').getContent({format: 'text'});
+  let anotacoes = tinyMCE.get('anotacoes').getContent()
+  var descricao = tinymce.get('descricao').getContent();
 
   // envio e recebimento das notas
   const result = fetch('../backend/_salvar_anotacoes.php', {
     method: 'POST',
-    body: `titulo=${titulo}&castegorias=${categorias}&anotacoes=${anotacoes}&descricao=${descricao}`,
+    body: `titulo=${titulo}&categorias=${categorias}&anotacoes=${anotacoes}&descricao=${descricao}`,
     headers: {
       'Content-type': 'application/x-www-form-urlencoded'
     }
