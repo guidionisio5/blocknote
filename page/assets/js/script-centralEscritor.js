@@ -9,16 +9,16 @@ $(document).ready(function () {
 
 
 const listarCategorias = () => {
-    const result = fetch('../backend/_listar_categorias_escritor.php')
+    const result = fetch('../backend/_listar_categorias.php')
         .then((response) => response.json())
         .then((result) => {
           $("#bloco-categoria").html('')
 
-            result.map(categoria => {
+            for (i = 1; i <= 5; i++) {
               $('#bloco-categoria').append(`
-                  <a href="#" class="item-categoria">${categoria.categorias}</a>
+                  <a href="categorias.php" class="item-categoria">${result[i].categorias}</a>
               `)
-            })
+            }
   
             $("#bloco-categoria").append(`
               <div class="item-categoria"> 
