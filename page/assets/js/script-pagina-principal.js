@@ -3,11 +3,6 @@ $(document).ready(function () {
     // executa a funçã// executa a função lista categorias
     listarCategorias()
     listarLembretes()
-    
-    //   utilização da biblioteca input mask para criar mascara de telefone
-    // deixa o negocio mais bonitinho
-    $('#data-lembrete').inputmask('99/99/9999')
-    $('#horario').inputmask('99:99')
   
   });
 
