@@ -70,7 +70,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" id="modal-cor">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 texto-menu" id="exampleModalLabel">Nova categoria!</h1>
+                    <h1 class="modal-title fs-5 texto-menu" id="exampleModalLabel">Salvar anotações!</h1>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -82,7 +82,6 @@
                         <div class="mb-3">
                             <label for="categorias" class="col-form-label texto-menu">Categoria:</label>
                             <select class="form-select input-cor texto-menu" aria-label="Default select example" id="option-categoria">
-                                
                                 
                             </select>
                         </div>

@@ -14,6 +14,10 @@ try {
 
     $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
 
+
+    // echo'<pre>'; 
+    // var_dump($retorno);
+
     echo $json;
 
 } catch(PDOException $e) {

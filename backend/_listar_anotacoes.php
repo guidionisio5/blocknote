@@ -4,7 +4,7 @@ include_once('include/conexao.php');
 
 try {
 
-    $sql = "SELECT id,categorias FROM tb_categorias WHERE ativo = 1 LIMIT 5";
+    $sql = "SELECT id,titulo,id_categorias,anotacao,descricao FROM tb_anotacoes WHERE ativo = 1";
 
     $comando = $con->prepare($sql);
 

@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     // executa a função lista categorias
     listarCategorias()
+    listarAnotacoes()
   
   });
   
@@ -173,12 +174,12 @@ const listarCategorias = () => {
                       </thead>
                       <tbody>
                           <tr>
-                              <td class="texto-menu">Matematica</td>
-                              <td class="texto-menu">Mark</td>
-                              <td>
-                              <button type="submit" class="btn btn-deletar" ><i class="bi bi-trash-fill"></i></button>
-                              <button type="submit" class="btn btn-deletar" ><i class="bi bi-pencil-square"></i></button>
-                              </td>
+                          <td class="texto-menu"></td>
+                          <td class="texto-menu"></td>
+                          <td>
+                            <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
+                            <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
+                          </td>
                           </tr>
                       </tbody>
                   </table>
