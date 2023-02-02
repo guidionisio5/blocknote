@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    background-color: #292929;
+}
+
+.container-anotacoes{
+    padding: 20px 0px 50px 0px;
+    display: grid;
+    margin: auto 0;
+    grid-template-columns: 50vw 50vw;
+}
+
+th{
+    color: white;
+}
+
+.div{
+    height: 100vh;
+}
+
+.lista-anotacoes{
+    width: 40vw;
+    height: 78vh;
+    border: 1px solid rgba(204, 204, 204, 0.253);
+    border: 1px solid #ffffff34;
+    padding: 20px;
+    display: grid;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 8px;
+}
+
+
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
+
+    #bloco-categoria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        align-items: center;
+        justify-items: left;
+    }
+    
+    
+    
+    .item-categoria{
+        display: grid;
+        width: 205px;
+        height: 160px;
+        border: 1px solid rgba(204, 204, 204, 0.253);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        text-align: center;
+        align-items: center;
+        color: #818181;
+    }
+    
+    a{
+        text-decoration: none;
+        color: rgba(204, 204, 204, 0.253);
+        font-size: 20px;
+    }
+    
+    .item-categoria:hover{
+        transform: scale(1.01);
+        cursor: pointer;
+        color: white;
+    }
