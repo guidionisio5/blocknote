@@ -65,7 +65,7 @@
         <script src="assets/js/script-img-central.js"></script>
         <script src="assets/js/script-categorias.js"></script>
         <script src="assets/js/script-listarCategorias.js"></script>
-        <script src="assets/js/script-salvarAnotacoes.js"></script>
+        <script src="assets/js/script-anotacoes.js"></script>
 </body>
 </body>
 

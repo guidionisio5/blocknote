@@ -16,7 +16,6 @@ const listarCategorias = () => {
                     <p>
                       <button type="submit" class="btn btn-deletar" data-bs-target="#modalDeletar" onclick="confirmaDeletarCategoria(${categoria.id})" data-bs-toggle="modal"><i class="bi bi-trash-fill"></i></button>
                       <button type="submit" class="btn btn-deletar" data-bs-target="#modalEditar" onclick="abreModalEditar(${categoria.id},'${categoria.categorias}')" data-bs-toggle="modal"><i class="bi bi-pencil-square"></i></button>
-                      <button type="submit" class="btn btn-deletar" onclick="abreModalAnotacoes(${categoria.id})"><i class="bi bi-list-ul"></i></button>
                     </p>
                   </a>
                `)
