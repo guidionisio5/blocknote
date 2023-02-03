@@ -76,7 +76,7 @@ const listarAnotacoes = () => {
             <td style="color: white;">${anotacoes.titulo}</td>
             <td style="color: white;">${anotacoes.data_cadastro}</td>
             <td style="color: white;" class="text-center">
-                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
+                <button type="submit" onclick="confirmaDeletarAnotacoes(${anotacoes.id})" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
                 <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
             </td>  
           `)
@@ -87,4 +87,51 @@ const listarAnotacoes = () => {
         `)
         
     })
+}
+
+const confirmaDeletarAnotacoes = (id) =>{
+  Swal.fire({
+    title: `Deseja mesmo deletar esta categoria?`,
+    text: "Você não será capaz de reverter isso!",
+    icon: 'Carregando',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Sim, deletar!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      deletarAnotacoes(id)
+    }
+})
+}
+
+const deletarAnotacoes = (id) => {
+
+  const result = fetch(`../backend/_deletar_anotacoes.php`, {
+    method: 'POST',
+    body: `id=${id}`,
+    headers: {
+        'Content-type': 'application/x-www-form-urlencoded'
+    } 
+  
+  })
+    .then((response) => response.json())
+    .then((result) => {
+
+    
+      Swal.fire({
+          icon: result.retorno == 'ok' ? 'success' : 'error',
+          title: 'ATENÇÃO!',
+          text: result.Mensagem,
+          showConfirmButton: false,
+          timer: 1500
+      
+      })
+
+      listarAnotacoes()
+
+  })
+
+  
+  
 }
