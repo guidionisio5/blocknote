@@ -12,12 +12,13 @@ const listarCategorias = () => {
           $("#bloco-categoria").html('')
             result.map(categoria => {
                $('#bloco-categoria').append(`
-                  <a href="anotacoes.php?id=${categoria.id}&categoria=${categoria.categorias}" class="blocos">${categoria.categorias}
+                  <div class="blocos bloco-categoriaaa">${categoria.categorias}
                     <p>
                       <button type="submit" class="btn btn-deletar" data-bs-target="#modalDeletar" onclick="confirmaDeletarCategoria(${categoria.id})" data-bs-toggle="modal"><i class="bi bi-trash-fill"></i></button>
                       <button type="submit" class="btn btn-deletar" data-bs-target="#modalEditar" onclick="abreModalEditar(${categoria.id},'${categoria.categorias}')" data-bs-toggle="modal"><i class="bi bi-pencil-square"></i></button>
+                      <a href="anotacoes.php?id=${categoria.id}&categoria=${categoria.categorias}"> <button type="submit" class="btn btn-deletar"><i class="bi bi-list-task"></i></button> </a>
                     </p>
-                  </a>
+                  </div>
                `)
             })
   
