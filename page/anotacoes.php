@@ -19,37 +19,41 @@
     <?php include '../include/header.php' ?>
 
     <div class="container-anotacoes">
-        <div class="lista-anotacoes">
-            <div class="table-wrapper-scroll-y my-custom-scrollbar div">
-                <div id="nome-categoria">
-                    
-                </div>
-                <table class="table table-bordered table-striped mb-0 my-table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Título</th>
-                            <th scope="col">Data de Publicação</th>
-                            <th scope="col">Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="tabela-anotacoes">
-
-                        </tr>
-                        
-                    </tbody>
-                </table>
+        <div>
+            <div id="nome-categoria">
 
             </div>
-            
+            <div class="lista-anotacoes">
+                <div class="table-wrapper-scroll-y my-custom-scrollbar div">
+
+                    <table class="table table-bordered table-striped mb-0 my-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Título</th>
+                                <th scope="col">Data de Publicação</th>
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="tabela-anotacoes">
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
         </div>
-        <div class="categorias">
-                <h5>Categorias</h5>
-                <div id="bloco-categoria">
 
-                </div>
+        <div class="categorias">
+            <h5>Categorias</h5>
+            <div id="bloco-categoria">
 
             </div>
+
+        </div>
 
         <!-- Importação do JQuery -->
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>

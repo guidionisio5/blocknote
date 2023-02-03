@@ -11,13 +11,14 @@
 body{
     height: 100vh;
     background-color: #292929;
+    overflow-x: hidden;
 }
 
 .container-anotacoes{
     padding: 20px 0px 50px 0px;
     display: grid;
     margin: auto 0;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 45vw 55vw;
 }
 
 th{
@@ -26,6 +27,10 @@ th{
 
 .div{
     height: 100vh;
+}
+
+#nome-categoria{
+    padding-left: 40px;
 }
 
 .lista-anotacoes{
@@ -54,17 +59,18 @@ th{
     #bloco-categoria{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap: 40px;
+        gap: 20px;
         align-items: center;
         justify-items: left;
+        
     }
     
     
     
     .item-categoria{
         display: grid;
-        width: 205px;
-        height: 160px;
+        width: 160px;
+        height: 130px;
         border: 1px solid rgba(204, 204, 204, 0.253);
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         text-align: center;

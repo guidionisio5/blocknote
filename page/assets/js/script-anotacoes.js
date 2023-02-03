@@ -35,7 +35,7 @@ const listarAnotacoes = () => {
           })
   
           $("#nome-categoria").append(`
-            <h5>Lista da Categoria ${nomeCategoria}:</h5>  
+            <h5>Lista da Categoria : ${nomeCategoria}</h5>  
           `)
           
       })
