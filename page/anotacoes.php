@@ -50,6 +50,51 @@
                         </tr>
                         <tr>
 
+                            <td style="color: white;">Festa do joao</td>
+                            <td style="color: white;">22-22-2222</td>
+                            <td style="color: white;" class="text-center">
+                                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
+                                <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td style="color: white;">Festa do joao</td>
+                            <td style="color: white;">22-22-2222</td>
+                            <td style="color: white;" class="text-center">
+                                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
+                                <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td style="color: white;">Festa do joao</td>
+                            <td style="color: white;">22-22-2222</td>
+                            <td style="color: white;" class="text-center">
+                                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
+                                <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td style="color: white;">Festa do joao</td>
+                            <td style="color: white;">22-22-2222</td>
+                            <td style="color: white;" class="text-center">
+                                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
+                                <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td style="color: white;">Festa do joao</td>
+                            <td style="color: white;">22-22-2222</td>
+                            <td style="color: white;" class="text-center">
+                                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
+                                <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+
                             <td style="color: white;">Festa do kaua</td>
                             <td style="color: white;">11-11-1111</td>
                             <td style="color: white;" class="text-center">
