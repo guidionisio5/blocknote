@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style-header.css">
+    <link rel="stylesheet" href="assets/css/style-categorias.css">
     <link rel="stylesheet" href="assets/css/style-anotacoes.css">
 </head>
 
@@ -20,7 +21,9 @@
     <div class="container-anotacoes">
         <div class="lista-anotacoes">
             <div class="table-wrapper-scroll-y my-custom-scrollbar div">
-                <h5>Lista da Categoria: </h5>
+                <div id="nome-categoria">
+                    
+                </div>
                 <table class="table table-bordered table-striped mb-0 my-table">
                     <thead>
                         <tr>
@@ -30,43 +33,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr id="tabela-anotacoes">
 
-                            <td style="color: white;">15 da aline</td>
-                            <td style="color: white;">23-2-2020</td>
-                            <td style="color: white;" class="text-center">
-                                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
-                                <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
-                            </td>
                         </tr>
-                        <tr>
-
-                            <td style="color: white;">Festa do joao</td>
-                            <td style="color: white;">22-22-2222</td>
-                            <td style="color: white;" class="text-center">
-                                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
-                                <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="color: white;">Festa do kaua</td>
-                            <td style="color: white;">11-11-1111</td>
-                            <td style="color: white;" class="text-center">
-                                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
-                                <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="color: white;">Churras</td>
-                            <td style="color: white;">03-09-2004</td>
-                            <td style="color: white;" class="text-center">
-                                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
-                                <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
-                            </td>
-                        </tr>
-
+                        
                     </tbody>
                 </table>
 
@@ -95,6 +65,7 @@
         <script src="assets/js/script-img-central.js"></script>
         <script src="assets/js/script-categorias.js"></script>
         <script src="assets/js/script-listarCategorias.js"></script>
+        <script src="assets/js/script-salvarAnotacoes.js"></script>
 </body>
 </body>
 

@@ -2,9 +2,11 @@
 
 include_once('include/conexao.php');
 
+$idC = $_POST['id'];
+
 try {
 
-    $sql = "SELECT id,titulo,id_categorias,anotacao,descricao FROM tb_anotacoes WHERE ativo = 1";
+    $sql = "SELECT id,titulo,id_categorias,anotacao,descricao,data_cadastro FROM tb_anotacoes WHERE id_categorias = '$idC'";
 
     $comando = $con->prepare($sql);
 

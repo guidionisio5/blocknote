@@ -2,7 +2,6 @@ $(document).ready(function () {
 
     // executa a função lista categorias
     listarCategorias()
-    listarAnotacoes()
   
   });
   
@@ -13,11 +12,11 @@ const listarCategorias = () => {
           $("#bloco-categoria").html('')
             result.map(categoria => {
                $('#bloco-categoria').append(`
-                  <a href="#" class="blocos">${categoria.categorias}
+                  <a href="anotacoes.php?id=${categoria.id}&categoria=${categoria.categorias}" class="blocos">${categoria.categorias}
                     <p>
                       <button type="submit" class="btn btn-deletar" data-bs-target="#modalDeletar" onclick="confirmaDeletarCategoria(${categoria.id})" data-bs-toggle="modal"><i class="bi bi-trash-fill"></i></button>
                       <button type="submit" class="btn btn-deletar" data-bs-target="#modalEditar" onclick="abreModalEditar(${categoria.id},'${categoria.categorias}')" data-bs-toggle="modal"><i class="bi bi-pencil-square"></i></button>
-                      <button type="submit" class="btn btn-deletar" onclick="abreModalAnotacoes()"><i class="bi bi-list-ul"></i></button>
+                      <button type="submit" class="btn btn-deletar" onclick="abreModalAnotacoes(${categoria.id})"><i class="bi bi-list-ul"></i></button>
                     </p>
                   </a>
                `)
@@ -153,7 +152,7 @@ const listarCategorias = () => {
 
   }
 
-  const abreModalAnotacoes = () => {
+  const abreModalAnotacoes = (id) => {
 
   $('#modal-listar-anotacoes').html(
     `<div class="modal" id="modalListar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -193,5 +192,6 @@ const listarCategorias = () => {
   )
   var myModal = new bootstrap.Modal(document.getElementById('modalListar'))
   myModal.show()
-
+    
   }
+

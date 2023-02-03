@@ -1,3 +1,10 @@
+$(document).ready(function () {
+
+  // executa a função lista categorias
+  listarAnotacoes()
+
+});
+
 const salvarAnotacoes = () =>{
 
   let titulo = $('#titulo').val();
@@ -43,5 +50,41 @@ const salvarAnotacoes = () =>{
     
         
       }
+    })
+}
+
+const listarAnotacoes = () => {
+
+  var urlAtual = window.location.href;
+  var urlClass = new URL(urlAtual);
+  var id = urlClass.searchParams.get("id");
+  var nomeCategoria = urlClass.searchParams.get("categoria");
+  
+  const result = fetch('../backend/_listar_anotacoes.php',{
+    method: 'POST',
+    body: `id=${id}`,
+    headers: {
+        'Content-type': 'application/x-www-form-urlencoded'
+    }
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      $("#tabela-anotacoes").html('')
+      $("#nome-categoria").html('')
+        result.map(anotacoes => {
+          $("#tabela-anotacoes").append(`
+            <td style="color: white;">${anotacoes.titulo}</td>
+            <td style="color: white;">${anotacoes.data_cadastro}</td>
+            <td style="color: white;" class="text-center">
+                <button type="submit" class="btn btn-deletar"><i class="bi bi-trash-fill"></i></button>
+                <button type="submit" class="btn btn-deletar"><i class="bi bi-pencil-square"></i></button>
+            </td>  
+          `)
+        })
+
+        $("#nome-categoria").append(`
+          <h5>Lista da Categoria ${nomeCategoria}:</h5>  
+        `)
+        
     })
 }
