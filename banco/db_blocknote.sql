@@ -1,6 +1,6 @@
 -- --------------------------------------------------------
 -- Servidor:                     127.0.0.1
--- Versão do servidor:           10.4.22-MariaDB - mariadb.org binary distribution
+-- Versão do servidor:           10.4.24-MariaDB - mariadb.org binary distribution
 -- OS do Servidor:               Win64
 -- HeidiSQL Versão:              12.0.0.6468
 -- --------------------------------------------------------
@@ -23,15 +23,18 @@ USE `db_blocknote`;
 CREATE TABLE IF NOT EXISTS `tb_anotacoes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(50) NOT NULL,
+  `id_categorias` int(11) NOT NULL,
   `anotacao` text NOT NULL,
   `descricao` text DEFAULT NULL,
-  `id_categorias` int(11) NOT NULL,
+  `login_email` varchar(50) NOT NULL,
   `data_cadastro` datetime NOT NULL DEFAULT current_timestamp(),
   `ativo` bit(1) NOT NULL DEFAULT b'1',
   PRIMARY KEY (`id`),
   KEY `id_categorias` (`id_categorias`),
-  CONSTRAINT `id_categorias` FOREIGN KEY (`id_categorias`) REFERENCES `tb_categorias` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
+  KEY `login_email` (`login_email`),
+  CONSTRAINT `id_categorias` FOREIGN KEY (`id_categorias`) REFERENCES `tb_categorias` (`id`),
+  CONSTRAINT `login_email_anotacoes` FOREIGN KEY (`login_email`) REFERENCES `tb_cadastro` (`email`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4;
 
 -- Copiando dados para a tabela db_blocknote.tb_anotacoes: ~0 rows (aproximadamente)
 
@@ -61,18 +64,22 @@ INSERT INTO `tb_cadastro` (`id`, `nome`, `email`, `senha`, `imagem`, `localizaca
 CREATE TABLE IF NOT EXISTS `tb_categorias` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `categorias` varchar(50) NOT NULL,
+  `login_email` varchar(50) NOT NULL,
   `ativo` bit(1) NOT NULL DEFAULT b'1',
   `data_cadastro` datetime NOT NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4;
+  PRIMARY KEY (`id`),
+  KEY `login_email_categorias` (`login_email`),
+  CONSTRAINT `login_email_categorias` FOREIGN KEY (`login_email`) REFERENCES `tb_cadastro` (`email`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4;
 
--- Copiando dados para a tabela db_blocknote.tb_categorias: ~4 rows (aproximadamente)
-INSERT INTO `tb_categorias` (`id`, `categorias`, `ativo`, `data_cadastro`) VALUES
-	(27, 'estudos de casa', b'1', '2023-01-25 19:09:43'),
-	(30, 'minecraft', b'1', '2023-01-25 19:10:43'),
-	(31, 'adad', b'1', '2023-01-25 19:12:00'),
-	(32, 'adadda', b'1', '2023-01-25 19:12:10'),
-	(33, 'fewfwefwe', b'1', '2023-01-27 19:34:50');
+-- Copiando dados para a tabela db_blocknote.tb_categorias: ~0 rows (aproximadamente)
+INSERT INTO `tb_categorias` (`id`, `categorias`, `login_email`, `ativo`, `data_cadastro`) VALUES
+	(36, 'estudo de casa', 'guidionisio5@gmail.com', b'1', '2023-02-04 23:56:24'),
+	(40, 'jnbjnbjgrn', 'guidionisio5@gmail.com', b'1', '2023-02-05 00:28:35'),
+	(41, 'gruhuehfherfh', 'guidionisio5@gmail.com', b'1', '2023-02-05 00:28:40'),
+	(42, 'estudo ', 'guidionisio5@gmail.com', b'1', '2023-02-05 00:28:48'),
+	(43, 'num sei', 'guidionisio5@gmail.com', b'1', '2023-02-05 00:28:56'),
+	(44, 'sei la', 'guidionisio5@gmail.com', b'1', '2023-02-05 00:29:03');
 
 -- Copiando estrutura para tabela db_blocknote.tb_duvidas
 CREATE TABLE IF NOT EXISTS `tb_duvidas` (
@@ -94,20 +101,19 @@ INSERT INTO `tb_duvidas` (`id`, `nome`, `email`, `duvida`, `ativo`, `data_cadast
 CREATE TABLE IF NOT EXISTS `tb_lembretes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(50) NOT NULL,
-  `data_lembrete` varchar(10) NOT NULL DEFAULT '',
-  `tempo` varchar(5) NOT NULL DEFAULT '',
+  `data_lembrete` varchar(10) NOT NULL,
+  `tempo` varchar(5) NOT NULL,
+  `login_email` varchar(50) NOT NULL,
   `data_cadastro` datetime NOT NULL DEFAULT current_timestamp(),
   `ativo` bit(1) NOT NULL DEFAULT b'1',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
+  PRIMARY KEY (`id`),
+  KEY `login_email_lembretes` (`login_email`),
+  CONSTRAINT `login_email_lembretes` FOREIGN KEY (`login_email`) REFERENCES `tb_cadastro` (`email`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
 
--- Copiando dados para a tabela db_blocknote.tb_lembretes: ~4 rows (aproximadamente)
-INSERT INTO `tb_lembretes` (`id`, `titulo`, `data_lembrete`, `tempo`, `data_cadastro`, `ativo`) VALUES
-	(1, 'Churrasco', '02-09-2023', '18:30', '2023-01-25 20:32:08', b'1'),
-	(2, 'Festa', '18-03-2023', '20:00', '2023-01-25 20:32:30', b'1'),
-	(3, 'Futebol Peixe', '02-05-2023', '17:00', '2023-01-25 20:32:57', b'1'),
-	(4, 'Treino', '01-28-2023', '07:00', '2023-01-25 21:04:09', b'1'),
-	(9, 'b', '11/11/1111', '11:11', '2023-01-27 21:36:42', b'1');
+-- Copiando dados para a tabela db_blocknote.tb_lembretes: ~0 rows (aproximadamente)
+INSERT INTO `tb_lembretes` (`id`, `titulo`, `data_lembrete`, `tempo`, `login_email`, `data_cadastro`, `ativo`) VALUES
+	(10, 'gggggggggggggggg', '12/11/2023', '12:55', 'guidionisio5@gmail.com', '2023-02-05 00:26:08', b'1');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
