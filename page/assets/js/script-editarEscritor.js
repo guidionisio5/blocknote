@@ -6,23 +6,12 @@ $(document).ready(function () {
     
   });
 
-
-
-
-const listarCategorias = () => {
-
-    // var urlAtual = window.location.href;
-    // var urlClass = new URL(urlAtual);
-    // var id = urlClass.searchParams.get("idC");
-    // var nomeCategoria = urlClass.searchParams.get("categoria");
-
+  const listarCategorias = () => {
     const result = fetch('../backend/_listar_categorias.php')
         .then((response) => response.json())
         .then((result) => {
-          $("#bloco-categoria").html('')
+          $("#bloco-categoria-anotacoes").html('')
           $("#option-categoria").html('')
-
-          
 
           $('#option-categoria').append(`
             <option class="option-cor" value="0" selected>Escolha uma categoria</option>
@@ -34,7 +23,7 @@ const listarCategorias = () => {
             `)
           })
 
-          $("#bloco-categoria").append(`
+          $("#bloco-categoria-anotacoes").append(`
             <div class="item-categoria"> 
                 <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <p class="mais">+</p>
@@ -42,16 +31,15 @@ const listarCategorias = () => {
             </div>
           `) 
           
-          for (i = 1; i <= 5; i++) {
-            $('#bloco-categoria').append(`
+          for (i = 0; i <= 4; i++) {
+            $('#bloco-categoria-anotacoes').append(`
               <a href="categorias.php" class="item-categoria">${result[i].categorias}</a>
             `)
           }
           
-                    
-        
         })
-}
+
+      }
 
 const abreModalSalvar = () => {
   
