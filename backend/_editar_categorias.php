@@ -1,11 +1,12 @@
 <?php
+    session_start();
     include 'include/conexao.php';
-
+    $login = $_SESSION['loginUser'];
     try{
         $id = $_POST['id'];
         $categorias = $_POST['categorias'];
 
-        $sql = "UPDATE tb_categorias SET `categorias` = '$categorias' WHERE id='$id'";
+        $sql = "UPDATE tb_categorias SET `categorias` = '$categorias' WHERE id='$id' AND login_email='$login'";
         $comando = $con->prepare($sql);
         $comando->execute();
 

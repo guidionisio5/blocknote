@@ -51,13 +51,7 @@ const listarCategorias = () => {
         .then((response) => response.json())
         .then((result) => {
           $("#bloco-categoria").html('')
-            
-            for (i = 1; i <= 2; i++) {
-                $('#bloco-categoria').append(`
-                    <a href="categorias.php" class="blocos">${result[i].categorias}</a>
-                `)
-            }
-  
+
             $("#bloco-categoria").append(`
               <div class="blocos-mais"> 
                   <button type="submit" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#categoriaModal">
@@ -65,6 +59,14 @@ const listarCategorias = () => {
                   </button>
               </div>
             `)
+            
+            for (i = 0; i <= 1; i++) {
+                $('#bloco-categoria').append(`
+                    <a href="categorias.php" class="blocos">${result[i].categorias}</a>
+                `)
+            }
+  
+            
             
         })
       
@@ -111,8 +113,18 @@ const listarCategorias = () => {
         .then((response) => response.json())
         .then((result) => {
           $("#bloco-lembrete").html('');
+
+          $("#bloco-lembrete").append(`
+              <div class="item-linha">
+                <div class="blocos-mais">
+                    <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#lembreteModal">
+                        <p class="mais">+</p>
+                    </button>
+                </div>
+              </div>
+            `)
             
-            for (i = 1; i <= 2; i++) {
+            for (i = 0; i <= 1; i++) {
                 $('#bloco-lembrete').append(`
                     <div class="item-linha">
                         <div class="bolinha"></div>
@@ -125,14 +137,5 @@ const listarCategorias = () => {
                 `)
             }
   
-            $("#bloco-lembrete").append(`
-              <div class="item-linha">
-                <div class="blocos-mais">
-                    <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#lembreteModal">
-                        <p class="mais">+</p>
-                    </button>
-                </div>
-              </div>
-            `)
         })
   }

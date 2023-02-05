@@ -1,7 +1,8 @@
 <?php
-
+session_start();
 include 'include/conexao.php';
 include 'include/function.php';
+$login = $_SESSION['loginUser'];
 
 try{
 
@@ -26,7 +27,7 @@ try{
         exit;
     }
 
-    $sql = "INSERT INTO tb_anotacoes(`titulo`, `anotacao`, `descricao`, `id_categorias`) VALUES('$titulo', '$anotacoes', '$descricao', '$categoria')";
+    $sql = "INSERT INTO tb_anotacoes(`titulo`, `anotacao`, `descricao`, `id_categorias`,`login_email`) VALUES('$titulo', '$anotacoes', '$descricao', '$categoria', '$login')";
     $comando = $con->prepare($sql);
     $comando->execute();
 

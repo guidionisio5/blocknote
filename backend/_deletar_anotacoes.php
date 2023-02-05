@@ -1,11 +1,12 @@
 <?php
+session_start();
 include 'include/conexao.php';
-
+$login = $_SESSION['loginUser'];
 try{
 
 $id = $_POST['id'];
 
-$sql = "DELETE FROM tb_anotacoes WHERE id = $id";
+$sql = "DELETE FROM tb_anotacoes WHERE id = '$id' AND login_email = '$login'";
 
 $comando = $con->prepare($sql);
 

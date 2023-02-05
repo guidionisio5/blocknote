@@ -1,7 +1,10 @@
 <?php
+session_start();
 
 include 'include/conexao.php';
 include 'include/function.php';
+
+$login = $_SESSION['loginUser'];
 
 try{
 
@@ -13,7 +16,7 @@ try{
     validaCampoVazio($data_lembrete,'data-lembrete');
     validaCampoVazio($tempo,'horario');
 
-    $sql = "INSERT INTO tb_lembretes(`titulo`,`data_lembrete`,`tempo`) VALUES('$titulo','$data_lembrete','$tempo')";
+    $sql = "INSERT INTO tb_lembretes(`titulo`,`data_lembrete`,`tempo`,`login_email`) VALUES('$titulo','$data_lembrete','$tempo','$login')";
     $comando = $con->prepare($sql);
     $comando->execute();
 

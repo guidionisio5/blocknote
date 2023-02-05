@@ -1,12 +1,12 @@
 <?php
-
+session_start();
 include_once('include/conexao.php');
-
+$login = $_SESSION['loginUser'];
 $idC = $_POST['id'];
 
 try {
 
-    $sql = "SELECT id,titulo,id_categorias,anotacao,descricao,data_cadastro FROM tb_anotacoes WHERE id_categorias = '$idC'";
+    $sql = "SELECT id,titulo,id_categorias,anotacao,descricao,data_cadastro FROM tb_anotacoes WHERE id_categorias = '$idC' AND login_email = '$login'";
 
     $comando = $con->prepare($sql);
 

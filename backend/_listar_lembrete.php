@@ -1,10 +1,11 @@
 <?php
-
+session_start();
 include_once('include/conexao.php');
+$login = $_SESSION['loginUser'];
 
 try {
 
-    $sql = "SELECT id,titulo,data_lembrete,tempo FROM tb_lembretes WHERE ativo = 1";
+    $sql = "SELECT id,titulo,data_lembrete,tempo FROM tb_lembretes WHERE login_email = '$login'";
 
     $comando = $con->prepare($sql);
 

@@ -1,10 +1,10 @@
 <?php
-
+session_start();
 include_once('include/conexao.php');
-
+$login = $_SESSION['loginUser'];
 try {
 
-    $sql = "SELECT id,categorias FROM tb_categorias WHERE ativo = 1";
+    $sql = "SELECT id,categorias FROM tb_categorias WHERE login_email = '$login'";
 
     $comando = $con->prepare($sql);
 

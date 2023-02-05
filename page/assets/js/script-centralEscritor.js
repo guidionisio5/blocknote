@@ -35,7 +35,7 @@ const listarCategorias = () => {
             </div>
           `) 
           
-          for (i = 1; i <= 5; i++) {
+          for (i = 0; i <= 4; i++) {
             $('#bloco-categoria').append(`
               <a href="categorias.php" class="item-categoria">${result[i].categorias}</a>
             `)

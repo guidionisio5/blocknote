@@ -1,7 +1,8 @@
 <?php 
+session_start();
 include 'include/conexao.php';
 include 'include/function.php';
-
+$login = $_SESSION['loginUser'];
 try{
 
     $titulo = $_POST['titulo'];
@@ -26,7 +27,7 @@ try{
         exit;
     }
 
-    $sql = "UPDATE tb_anotacoes SET titulo = '$titulo', id_categorias = '$categoria', anotacao = '$anotacao', descricao = '$descricao' WHERE id = '$id'";
+    $sql = "UPDATE tb_anotacoes SET titulo = '$titulo', id_categorias = '$categoria', anotacao = '$anotacao', descricao = '$descricao' WHERE id = '$id' AND login_email = '$login'";
     $comando = $con->prepare($sql);
     $comando->execute();
 
