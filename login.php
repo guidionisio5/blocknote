@@ -36,7 +36,7 @@ session_start();
     </div>
     <div class="login">
 
-      <div >
+      <div>
         <nav class="navbar navbar-expand-lg " >
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,11 +44,11 @@ session_start();
             </button>
             <div class="collapse navbar-collapse separa" id="navbarTogglerDemo01">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                            <a class="nav-link  a-navbar avbar-100" href="index.html">Home</a>
-                          </li>
                 <li class="nav-item">
-                  <a class="nav-link  a-navbar avbar-100" href="sobre.html">Sobre Nós</a>
+                  <a class="nav-link  a-navbar avbar-100" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  a-navbar avbar-100" href="sobre.html">Sobre</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link  a-navbar avbar-100" href="duvidas.html">Duvidas</a>
