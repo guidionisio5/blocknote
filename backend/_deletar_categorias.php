@@ -7,10 +7,12 @@ try{
 
 $id = $_POST['id'];
 
-$sql = "DELETE FROM tb_categorias WHERE id = $id AND login_email = '$login'";
-
+$sql = "DELETE FROM tb_anotacoes WHERE id_categorias = '$id'";
 $comando = $con->prepare($sql);
+$comando->execute();
 
+$sql2 = "DELETE FROM tb_categorias WHERE id = $id AND login_email = '$login'";
+$comando = $con->prepare($sql2);
 $comando->execute();
 
 // o location faz a pagina mudar sem o usuario perceber

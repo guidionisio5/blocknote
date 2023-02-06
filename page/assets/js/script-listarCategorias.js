@@ -10,6 +10,15 @@ const listarCategorias = () => {
         .then((response) => response.json())
         .then((result) => {
           $("#bloco-categoria").html('')
+
+            $("#bloco-categoria").append(`
+              <div class="blocos-mais"> 
+                  <button type="submit" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <p class="mais">+</p>
+                  </button>
+              </div>
+            `)
+            
             result.map(categoria => {
                $('#bloco-categoria').append(`
                   <div class="blocos">${categoria.categorias}
@@ -21,14 +30,6 @@ const listarCategorias = () => {
                   </div>
                `)
             })
-  
-            $("#bloco-categoria").append(`
-              <div class="blocos-mais"> 
-                  <button type="submit" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <p class="mais">+</p>
-                  </button>
-              </div>
-            `)
             
         })
       

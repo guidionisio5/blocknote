@@ -52,6 +52,17 @@ const listarLembretes = () => {
       .then((response) => response.json())
       .then((result) => {
         $("#bloco-lembrete").html('')
+
+          $("#bloco-lembrete").append(`
+            <div class="item-linha">
+              <div class="blocos-mais">
+                  <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <p class="mais">+</p>
+                  </button>
+              </div>
+            </div>
+          `)
+
           result.map(lembrete => {
               $('#bloco-lembrete').append(`
               <div class="item-linha">
@@ -69,15 +80,6 @@ const listarLembretes = () => {
               `)
           })
 
-          $("#bloco-lembrete").append(`
-            <div class="item-linha">
-              <div class="blocos-mais">
-                  <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <p class="mais">+</p>
-                  </button>
-              </div>
-            </div>
-          `)
       })
 }
 

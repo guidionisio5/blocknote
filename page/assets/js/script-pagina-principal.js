@@ -53,11 +53,13 @@ const listarCategorias = () => {
           $("#bloco-categoria").html('')
 
             $("#bloco-categoria").append(`
+            <div class="item-linha">
               <div class="blocos-mais"> 
                   <button type="submit" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#categoriaModal">
                       <p class="mais">+</p>
                   </button>
               </div>
+            </div>  
             `)
             
             for (i = 0; i <= 1; i++) {

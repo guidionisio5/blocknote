@@ -18,8 +18,8 @@
 
         <div class="container">
             <div>
-                <div class="titulo">
-                    <h5>Categorias</h5>
+                <div>
+                    <h5 class="titulo">Categorias</h5>
                 </div>
 
                 <div class="linha" id="bloco-categoria">

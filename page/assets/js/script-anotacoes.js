@@ -155,7 +155,7 @@ const listarAnotacoes = () => {
 
             for (i = 0; i <= 4; i++) {
               $('#bloco-categoria').append(`
-                <a href="anotacoes.php?$" class="bloco-categoriaaa">${result[i].categorias}</a>
+                <a href="anotacoes.php" class="bloco-categoriaaa">${result[i].categorias}</a>
               `)
             }
             
