@@ -10,7 +10,7 @@ $(document).ready(function () {
     const result = fetch('../backend/_listar_categorias.php')
         .then((response) => response.json())
         .then((result) => {
-          $("#bloco-categoria-anotacoes").html('')
+          $("#bloco-categoria").html('')
           $("#option-categoria").html('')
 
           $('#option-categoria').append(`
@@ -23,7 +23,7 @@ $(document).ready(function () {
             `)
           })
 
-          $("#bloco-categoria-anotacoes").append(`
+          $("#bloco-categoria").append(`
             <div class="item-categoria"> 
                 <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <p class="mais">+</p>
@@ -32,7 +32,7 @@ $(document).ready(function () {
           `) 
           
           for (i = 0; i <= 4; i++) {
-            $('#bloco-categoria-anotacoes').append(`
+            $('#bloco-categoria').append(`
               <a href="categorias.php" class="item-categoria">${result[i].categorias}</a>
             `)
           }

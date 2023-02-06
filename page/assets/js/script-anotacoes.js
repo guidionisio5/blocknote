@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     // executa a função lista categorias
     listarAnotacoes()
+    listarCategorias()
   
   });
 
@@ -137,4 +138,27 @@ const listarAnotacoes = () => {
 
     })
   }
-  
+
+  const listarCategorias = () => {
+    const result = fetch('../backend/_listar_categorias.php')
+        .then((response) => response.json())
+        .then((result) => {
+          $("#bloco-categoria").html('')
+
+            $("#bloco-categoria").append(`
+              <div class="blocos-maisss"> 
+                  <button type="submit" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <p class="mais">+</p>
+                  </button>
+              </div>
+            `)
+
+            for (i = 0; i <= 4; i++) {
+              $('#bloco-categoria').append(`
+                <div class="bloco-categoriaaa">${result[i].categorias}</div>
+              `)
+            }
+            
+        })
+      
+  }

@@ -30,7 +30,7 @@
 
         <div class="categorias">
             <h5>Categorias</h5>
-            <div id="bloco-categoria-anotacoes">
+            <div id="bloco-categoria">
                 
             </div>
 
