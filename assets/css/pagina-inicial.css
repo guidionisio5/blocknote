@@ -13,6 +13,10 @@ body{
     background-color: #262424;
 }
 
+.a-navbar:hover{
+    color: lightgray;
+}
+
 .navbar{
     display: grid;
     grid-template-columns: 1fr 1fr;
